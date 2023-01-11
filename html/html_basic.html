@@ -1,188 +1,2491 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>html 기초</title>
-    <link rel="shortcut icon" href="../images/icons/exitdb_favicon.png" type="image/x-icon"/>
+    <link
+      rel="shortcut icon"
+      href="../images/icons/exitdb_favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
     <link rel="stylesheet" href="../css/aos.css" />
-    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <script src="../js/aos.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="menu">
-          <a href="../index.html"><p>HOME</p></a>
-          <ul class="menubar">
-            <li>
-              <a href="html_basic.html">HTML 기초</a>
-            </li>
-            <li>
-              <a href="css_basic.html">CSS 기초</a>
-            </li>
-            <li>
-              <a href="js_basic.html">Javascript 기초</a>
-            </li>
-            <li>
-              <a href="library_basic.html">라이브러리 기초</a>
-            </li>
-            <li>
-              <a href="terms.html">용어정리</a>
-            </li>
-          </ul>
-          <a href="../index.html"><p>HOME</p></a>
-        </nav>
-      </header>
+      <nav class="menu">
+        <a href="../index.html"><p>HOME</p></a>
+        <ul class="menubar">
+          <li>
+            <a href="html_basic.html">HTML 기초</a>
+          </li>
+          <li>
+            <a href="css_basic.html">CSS 기초</a>
+          </li>
+          <li>
+            <a href="js_basic.html">Javascript 기초</a>
+          </li>
+          <li>
+            <a href="library_basic.html">라이브러리 기초</a>
+          </li>
+          <li>
+            <a href="terms.html">용어정리</a>
+          </li>
+        </ul>
+        <a href="../index.html"><p>HOME</p></a>
+      </nav>
+    </header>
     <main>
-        <section class="section html_knowledge">
-            <h2 class="title">HTML 기초</h2>
-            <ol>
-                <li><h3 class="subtitle">(1) block요소와 inline요소</h3>
-                    <h4 class="subtitle2">1) block 요소란?</h4>
-                    <p>블록 전체에 동일한 CSS 스타일을 적용/자바 스크립트로 블록을 하나의 단위처럼 다루고자 할 때 사용</p>
-                    <details>
-                        <summary class="fold_title">block 태그목록</summary>
-                        <div markdown="1" class="fold_contents">
-                            <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%">&lt;a&gt;,&nbsp;&lt;abbr&gt;,&nbsp;&lt;acronym&gt;,&nbsp;&lt;b&gt;,&nbsp;&lt;bdo&gt;,&nbsp;&lt;big&gt;,&nbsp;&lt;br/&gt;,&nbsp;&lt;button&gt;,&nbsp;&lt;cite&gt;,&nbsp;&lt;code&gt;,&nbsp;&lt;dfn&gt;,&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&lt;em&gt;,&nbsp;&lt;i&gt;,&nbsp;&lt;img&gt;,&nbsp;&lt;input&gt;,&nbsp;&lt;kbd&gt;,&lt;label&gt;,&lt;map&gt;,&nbsp;&lt;object&gt;,&nbsp;&lt;q&gt;,&nbsp;&lt;samp&gt;,&nbsp;&lt;small&gt;,&nbsp;&lt;script&gt;,&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&lt;select&gt;,&nbsp;&lt;span&gt;,&nbsp;&lt;strong&gt;,&nbsp;&lt;sub&gt;,&nbsp;&lt;sup&gt;,&nbsp;&lt;textarea&gt;,&nbsp;&lt;tt&gt;,&nbsp;&lt;var&gt;&lt;/pre&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+      <section class="section html_knowledge">
+        <h2 class="title">HTML 기초</h2>
+        <ol>
+          <li>
+            <h3 class="subtitle">(1) block요소와 inline요소</h3>
+            <h4 class="subtitle2">1) block 요소란?</h4>
+            <p>
+              블록 전체에 동일한 CSS 스타일을 적용/자바 스크립트로 블록을 하나의
+              단위처럼 다루고자 할 때 사용
+            </p>
+            <details>
+              <summary class="fold_title">block 태그목록</summary>
+              <div markdown="1" class="fold_contents">
+                <div
+                  class="colorscripter-code"
+                  style="
+                    color: #f0f0f0;
+                    font-family: Consolas, 'Liberation Mono', Menlo, Courier,
+                      monospace !important;
+                    position: relative !important;
+                    overflow: auto;
+                  "
+                >
+                  <table
+                    class="colorscripter-code-table"
+                    style="
+                      margin: 0;
+                      padding: 0;
+                      border: none;
+                      background-color: #272727;
+                      border-radius: 4px;
+                    "
+                    cellspacing="0"
+                    cellpadding="0"
+                  >
+                    <tr>
+                      <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                        <div
+                          style="
+                            margin: 0;
+                            padding: 0;
+                            word-break: normal;
+                            text-align: right;
+                            color: #aaa;
+                            font-family: Consolas, 'Liberation Mono', Menlo,
+                              Courier, monospace !important;
+                            line-height: 130%;
+                          "
+                        >
+                          <div style="line-height: 130%">1</div>
+                          <div style="line-height: 130%">2</div>
+                          <div style="line-height: 130%">3</div>
                         </div>
-                    </details>
-                    <h4 class="subtitle2">2) inline 요소란?</h4>
-                    <p>텍스트 일부분에 특별한 모양을 주거나, 자바 스크립트 코드로 텍스트 일부분을 제어하고자 할 때 사용</p>
-                    <details>
-                        <summary class="fold_title">inline 태그목록</summary>
-                        <div markdown="1" class="fold_contents">
-                            <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&lt;a&gt;,&nbsp;&lt;abbr&gt;,&nbsp;&lt;acronym&gt;,&nbsp;&lt;b&gt;,&nbsp;&lt;bdo&gt;,&nbsp;&lt;big&gt;,&nbsp;&lt;br/&gt;,&nbsp;&lt;button&gt;,&nbsp;&lt;cite&gt;,&nbsp;&lt;code&gt;,&nbsp;&lt;dfn&gt;,&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&lt;em&gt;,&nbsp;&lt;i&gt;,&nbsp;&lt;img&gt;,&nbsp;&lt;input&gt;,&nbsp;&lt;kbd&gt;,&lt;label&gt;,&lt;map&gt;,&nbsp;&lt;object&gt;,&nbsp;&lt;q&gt;,&nbsp;&lt;samp&gt;,&nbsp;&lt;small&gt;,&nbsp;&lt;script&gt;,&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&lt;select&gt;,&nbsp;&lt;span&gt;,&nbsp;&lt;strong&gt;,&nbsp;&lt;sub&gt;,&nbsp;&lt;sup&gt;,&nbsp;&lt;textarea&gt;,&nbsp;&lt;tt&gt;,&nbsp;&lt;var&gt;&lt;/pre&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                      </td>
+                      <td style="padding: 6px 0; text-align: left">
+                        <div
+                          style="
+                            margin: 0;
+                            padding: 0;
+                            color: #f0f0f0;
+                            font-family: Consolas, 'Liberation Mono', Menlo,
+                              Courier, monospace !important;
+                            line-height: 130%;
+                          "
+                        >
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 130%;
+                            "
+                          >
+                            &lt;a&gt;,&nbsp;&lt;abbr&gt;,&nbsp;&lt;acronym&gt;,&nbsp;&lt;b&gt;,&nbsp;&lt;bdo&gt;,&nbsp;&lt;big&gt;,&nbsp;&lt;br/&gt;,&nbsp;&lt;button&gt;,&nbsp;&lt;cite&gt;,&nbsp;&lt;code&gt;,&nbsp;&lt;dfn&gt;,&nbsp;
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 130%;
+                            "
+                          >
+                            &lt;em&gt;,&nbsp;&lt;i&gt;,&nbsp;&lt;img&gt;,&nbsp;&lt;input&gt;,&nbsp;&lt;kbd&gt;,&lt;label&gt;,&lt;map&gt;,&nbsp;&lt;object&gt;,&nbsp;&lt;q&gt;,&nbsp;&lt;samp&gt;,&nbsp;&lt;small&gt;,&nbsp;&lt;script&gt;,&nbsp;
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 130%;
+                            "
+                          >
+                            &lt;select&gt;,&nbsp;&lt;span&gt;,&nbsp;&lt;strong&gt;,&nbsp;&lt;sub&gt;,&nbsp;&lt;sup&gt;,&nbsp;&lt;textarea&gt;,&nbsp;&lt;tt&gt;,&nbsp;&lt;var&gt;&lt;/pre&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          </div>
                         </div>
-                    </details>
-                </li>
-                <li><h3 class="subtitle">(2) 시멘틱 태그란?</h3>
-                    <p>이 태그들의 콘텐츠가 출력되는 위치나 모양은 개발자가 CSS에서 직접 만들어야 한다.</p>
-                    <p>&lt;header&gt; // 페이지나 섹션의 머리말<br>
-                        &lt;nav&gt; // navigation의 줄임말로 하이퍼링크들을 모아 놓은 특별한 섹션. 페이지 내 목차에 주로 사용.<br>
-                        &lt;section&gt; // 필수적인 내용. 문서의 장 혹은 절을 구성하는 역할. &lt;section&gt;에는 &lt;h1&gt;~&lt;h6&gt;로 섹션의 주제를 기재하는 것이 바람직<br>
-                        &lt;article&gt; // 보조적인 내용. 웹페이지의 본질을 훼손하지 않는 보조적인 기사, 블로그 포스트, 댓글이나 기타 독립적인 내용을 담는 영역.<br>
-                        &lt;aside&gt; // 웹페이지의 본문 흐름에서 약간 벗어난 노트나 팁, 삽입 어구. 페이지의 오른쪽이나 왼쪽에 주로 배치.<br>
-                        &lt;footer&gt; // 꼬리말 영역 표시. 저자나 저작권 정보를 주로 표시. 단, &lt;header&gt;나&lt;footer&gt;가 꼭 웹페이지의 서두나 말미에 배치될 필요는 없다.</p>
-                        <p>※section, article, nav, aside 등의 태그는 제목을 써줘야 시멘틱해진다. 물론 div로 대체는 가능</p>
-                </li>
-                <li><h3 class="subtitle">(3) get방식과 post방식</h3>
-                    <p>
-                        get방식은 리스트 같은 데서 선택해서 읽을 때는 많이 쓰이지만,<br>
-                        기입한 요소가 url에 실리게 되므로 중요한 정보를 보낼 때는 부적합하다. <br>
-                        그러나 post 방식은 기입한 요소가 url이 아니라 body에 실리므로 비밀 번호 등에 적합하다. <br>
-                        한편, 서버 측에서는 데이터를 name으로 받으므로, 레이블을 붙이면 접근성을 높일 수 있다. <br>
-                    </p>
-                </li>
-            </ol>
-        </section>
-        <section class="section html_tag">
-            <h2 class="title">html 태그</h2><ol>
-                <li>
-                    <details>
-                        <summary class="fold_title">테이블 태그#스타일</summary>
-                        <div markdown="1">
-                            <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div><div style="line-height:25%">3</div><div style="line-height:25%">4</div><div style="line-height:25%">5</div><div style="line-height:25%">6</div><div style="line-height:25%">7</div><div style="line-height:25%">8</div><div style="line-height:25%">9</div><div style="line-height:25%">10</div><div style="line-height:25%">11</div><div style="line-height:25%">12</div><div style="line-height:25%">13</div><div style="line-height:25%">14</div><div style="line-height:25%">15</div><div style="line-height:25%">16</div><div style="line-height:25%">17</div><div style="line-height:25%">18</div><div style="line-height:25%">19</div><div style="line-height:25%">20</div><div style="line-height:25%">21</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">table</span>&nbsp;<span style="color:#a8ff58">border</span>=<span style="color:#ffd500">"1"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">width</span>=<span style="color:#ffd500">"1200px"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">colgroup</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">col</span>&nbsp;<span style="color:#a8ff58">style</span>=<span style="color:#ffd500">"width:&nbsp;10%"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">col</span>&nbsp;<span style="color:#a8ff58">style</span>=<span style="color:#ffd500">"width:&nbsp;22.5%"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">col</span>&nbsp;<span style="color:#a8ff58">style</span>=<span style="color:#ffd500">"width:&nbsp;22.5%"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">col</span>&nbsp;<span style="color:#a8ff58">style</span>=<span style="color:#ffd500">"width:&nbsp;22.5%"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">col</span>&nbsp;<span style="color:#a8ff58">style</span>=<span style="color:#ffd500">"width:&nbsp;22.5%"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">colgroup</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">tbody</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">tr</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">th</span>&nbsp;<span style="color:#a8ff58">rowspan</span>=<span style="color:#ffd500">"2"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>학력사항<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span>재학기간<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span>학교명<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span>전공&nbsp;및&nbsp;성적<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span>소재지<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">tr</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">tr</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">th</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">tr</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">tbody</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">table</span><span style="color:#f0f0f0">&gt;</span></div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4ftext-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                      </td>
+                      <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                        <a
+                          href="http://colorscripter.com/info#e"
+                          target="_blank"
+                          style="text-decoration: none; color: white"
+                          ><span
+                            style="
+                              font-size: 9px;
+                              word-break: normal;
+                              background-color: #4f4f4f;
+                              color: white;
+                              border-radius: 10px;
+                              padding: 1px;
+                            "
+                            >cs</span
+                          ></a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </details>
+            <h4 class="subtitle2">2) inline 요소란?</h4>
+            <p>
+              텍스트 일부분에 특별한 모양을 주거나, 자바 스크립트 코드로 텍스트
+              일부분을 제어하고자 할 때 사용
+            </p>
+            <details>
+              <summary class="fold_title">inline 태그목록</summary>
+              <div markdown="1" class="fold_contents">
+                <div
+                  class="colorscripter-code"
+                  style="
+                    color: #f0f0f0;
+                    font-family: Consolas, 'Liberation Mono', Menlo, Courier,
+                      monospace !important;
+                    position: relative !important;
+                    overflow: auto;
+                  "
+                >
+                  <table
+                    class="colorscripter-code-table"
+                    style="
+                      margin: 0;
+                      padding: 0;
+                      border: none;
+                      background-color: #272727;
+                      border-radius: 4px;
+                    "
+                    cellspacing="0"
+                    cellpadding="0"
+                  >
+                    <tr>
+                      <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                        <div
+                          style="
+                            margin: 0;
+                            padding: 0;
+                            word-break: normal;
+                            text-align: right;
+                            color: #aaa;
+                            font-family: Consolas, 'Liberation Mono', Menlo,
+                              Courier, monospace !important;
+                            line-height: 130%;
+                          "
+                        >
+                          <div style="line-height: 130%">1</div>
+                          <div style="line-height: 130%">2</div>
+                          <div style="line-height: 130%">3</div>
                         </div>
-                    </details>                    
-                </li>
-                <li>
-                    <details>
-                        <summary class="fold_title">폼#id password 입력</summary>
-                        <div markdown="1">
-                            <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div><div style="line-height:25%">3</div><div style="line-height:25%">4</div><div style="line-height:25%">5</div><div style="line-height:25%">6</div><div style="line-height:25%">7</div><div style="line-height:25%">8</div><div style="line-height:25%">9</div><div style="line-height:25%">10</div><div style="line-height:25%">11</div><div style="line-height:25%">12</div><div style="line-height:25%">13</div><div style="line-height:25%">14</div><div style="line-height:25%">15</div><div style="line-height:25%">16</div><div style="line-height:25%">17</div><div style="line-height:25%">18</div><div style="line-height:25%">19</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">form</span>&nbsp;<span style="color:#a8ff58">action</span>=<span style="color:#ffd500">""</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">label</span>&nbsp;<span style="color:#a8ff58">for</span>=<span style="color:#ffd500">"userID"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>아이디<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">label</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">input</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"text"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">name</span>=<span style="color:#ffd500">"id"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">id</span>=<span style="color:#ffd500">"userID"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">placeholder</span>=<span style="color:#ffd500">"이름을&nbsp;쓰세요."</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">label</span>&nbsp;<span style="color:#a8ff58">for</span>=<span style="color:#ffd500">"userPWD"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>비밀번호<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">label</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">input</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"password"</span><span style="color:#a8ff58"></span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">name</span>=<span style="color:#ffd500">"pwd"</span><span style="color:#a8ff58"></span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">id</span>=<span style="color:#ffd500">"userPWD"</span><span style="color:#a8ff58"></span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">placeholder</span>=<span style="color:#ffd500">"패스워드를&nbsp;입력하세요."</span><span style="color:#a8ff58"></span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">required</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">button</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"submit"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>확인<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">button</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">button</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"reset"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>취소<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">button</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">input</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"button"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">value</span>=<span style="color:#ffd500">"확인"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">form</span><span style="color:#f0f0f0">&gt;</span></div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4ftext-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
-                            <p class="fold_desc">
-                                required를 넣어주면 비어 있으면 벗어날 수 없다. <br>
-                                단, required를 쓰지 않고 자바 스크립트로 제어하는 방법도 있다. <br>
-                                취소 버튼의 경우 type에 리셋 설정을 해준다. <br>
-                                인풋 타입 버튼도 버튼을 만들 수 있지만 텍스트를 value안에 적어야만 한다.</p>
+                      </td>
+                      <td style="padding: 6px 0; text-align: left">
+                        <div
+                          style="
+                            margin: 0;
+                            padding: 0;
+                            color: #f0f0f0;
+                            font-family: Consolas, 'Liberation Mono', Menlo,
+                              Courier, monospace !important;
+                            line-height: 130%;
+                          "
+                        >
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 130%;
+                            "
+                          >
+                            &nbsp;&lt;a&gt;,&nbsp;&lt;abbr&gt;,&nbsp;&lt;acronym&gt;,&nbsp;&lt;b&gt;,&nbsp;&lt;bdo&gt;,&nbsp;&lt;big&gt;,&nbsp;&lt;br/&gt;,&nbsp;&lt;button&gt;,&nbsp;&lt;cite&gt;,&nbsp;&lt;code&gt;,&nbsp;&lt;dfn&gt;,&nbsp;
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 130%;
+                            "
+                          >
+                            &lt;em&gt;,&nbsp;&lt;i&gt;,&nbsp;&lt;img&gt;,&nbsp;&lt;input&gt;,&nbsp;&lt;kbd&gt;,&lt;label&gt;,&lt;map&gt;,&nbsp;&lt;object&gt;,&nbsp;&lt;q&gt;,&nbsp;&lt;samp&gt;,&nbsp;&lt;small&gt;,&nbsp;&lt;script&gt;,&nbsp;
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 130%;
+                            "
+                          >
+                            &lt;select&gt;,&nbsp;&lt;span&gt;,&nbsp;&lt;strong&gt;,&nbsp;&lt;sub&gt;,&nbsp;&lt;sup&gt;,&nbsp;&lt;textarea&gt;,&nbsp;&lt;tt&gt;,&nbsp;&lt;var&gt;&lt;/pre&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          </div>
                         </div>
-                    </details>                    
-                </li>
-                <li>
-                    <details>
-                        <summary class="fold_title">폼#체크박스</summary>
-                        <div markdown="1">
-                            <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div><div style="line-height:25%">3</div><div style="line-height:25%">4</div><div style="line-height:25%">5</div><div style="line-height:25%">6</div><div style="line-height:25%">7</div><div style="line-height:25%">8</div><div style="line-height:25%">9</div><div style="line-height:25%">10</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">label</span><span style="color:#f0f0f0">&gt;</span>영화<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">input</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"checkbox"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">name</span>=<span style="color:#ffd500">"interest"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">value</span>=<span style="color:#ffd500">"영화"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">label</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">label</span><span style="color:#f0f0f0">&gt;</span>독서<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">input</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"checkbox"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">name</span>=<span style="color:#ffd500">"interest"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">value</span>=<span style="color:#ffd500">"독서"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">label</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">label</span><span style="color:#f0f0f0">&gt;</span>바둑<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">input</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"checkbox"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">name</span>=<span style="color:#ffd500">"interest"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">value</span>=<span style="color:#ffd500">"바둑"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">label</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">p</span><span style="color:#f0f0f0">&gt;</span>성별을&nbsp;입력하세요<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">p</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">label</span><span style="color:#f0f0f0">&gt;</span>남자<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">input</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"radio"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">name</span>=<span style="color:#ffd500">"gender"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">value</span>=<span style="color:#ffd500">"male"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">checked</span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">label</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">label</span><span style="color:#f0f0f0">&gt;</span>여자<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">input</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"radio"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">name</span>=<span style="color:#ffd500">"gender"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">value</span>=<span style="color:#ffd500">"female"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">label</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4ftext-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
-                            <p class="fold_desc">하나만 선택해야 할 때는 radio를 쓰고, 다중 선택 가능할 때는 checkbox를 쓴다. <br>
-                                항목이 여러개로 많을 때는 label로 묶으면 편하다. 단 for를 지워야 한다. <br>
-                                checked를 쓰면 radio나 checkbox의 기본 값으로 선택하게 할 수 있다.</p>
+                      </td>
+                      <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                        <a
+                          href="http://colorscripter.com/info#e"
+                          target="_blank"
+                          style="text-decoration: none; color: white"
+                          ><span
+                            style="
+                              font-size: 9px;
+                              word-break: normal;
+                              background-color: #4f4f4f;
+                              color: white;
+                              border-radius: 10px;
+                              padding: 1px;
+                            "
+                            >cs</span
+                          ></a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </details>
+          </li>
+          <li>
+            <h3 class="subtitle">(2) 시멘틱 태그란?</h3>
+            <p>
+              이 태그들의 콘텐츠가 출력되는 위치나 모양은 개발자가 CSS에서 직접
+              만들어야 한다.
+            </p>
+            <p>
+              &lt;header&gt; // 페이지나 섹션의 머리말<br />
+              &lt;nav&gt; // navigation의 줄임말로 하이퍼링크들을 모아 놓은
+              특별한 섹션. 페이지 내 목차에 주로 사용.<br />
+              &lt;section&gt; // 필수적인 내용. 문서의 장 혹은 절을 구성하는
+              역할. &lt;section&gt;에는 &lt;h1&gt;~&lt;h6&gt;로 섹션의 주제를
+              기재하는 것이 바람직<br />
+              &lt;article&gt; // 보조적인 내용. 웹페이지의 본질을 훼손하지 않는
+              보조적인 기사, 블로그 포스트, 댓글이나 기타 독립적인 내용을 담는
+              영역.<br />
+              &lt;aside&gt; // 웹페이지의 본문 흐름에서 약간 벗어난 노트나 팁,
+              삽입 어구. 페이지의 오른쪽이나 왼쪽에 주로 배치.<br />
+              &lt;footer&gt; // 꼬리말 영역 표시. 저자나 저작권 정보를 주로
+              표시. 단, &lt;header&gt;나&lt;footer&gt;가 꼭 웹페이지의 서두나
+              말미에 배치될 필요는 없다.
+            </p>
+            <p>
+              ※section, article, nav, aside 등의 태그는 제목을 써줘야
+              시멘틱해진다. 물론 div로 대체는 가능
+            </p>
+          </li>
+          <li>
+            <h3 class="subtitle">(3) get방식과 post방식</h3>
+            <p>
+              get방식은 리스트 같은 데서 선택해서 읽을 때는 많이 쓰이지만,<br />
+              기입한 요소가 url에 실리게 되므로 중요한 정보를 보낼 때는
+              부적합하다. <br />
+              그러나 post 방식은 기입한 요소가 url이 아니라 body에 실리므로 비밀
+              번호 등에 적합하다. <br />
+              한편, 서버 측에서는 데이터를 name으로 받으므로, 레이블을 붙이면
+              접근성을 높일 수 있다. <br />
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section class="section html_tag">
+        <h2 class="title">html 태그</h2>
+        <ol>
+          <li>
+            <details>
+              <summary class="fold_title">테이블 태그#스타일</summary>
+              <div markdown="1">
+                <div
+                  class="colorscripter-code"
+                  style="
+                    color: #f0f0f0;
+                    font-family: Consolas, 'Liberation Mono', Menlo, Courier,
+                      monospace !important;
+                    width: 1000px;
+                    position: relative !important;
+                    overflow: auto;
+                  "
+                >
+                  <table
+                    class="colorscripter-code-table"
+                    style="
+                      margin: 0;
+                      padding: 0;
+                      border: none;
+                      background-color: #272727;
+                      border-radius: 4px;
+                    "
+                    cellspacing="0"
+                    cellpadding="0"
+                  >
+                    <tr>
+                      <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                        <div
+                          style="
+                            margin: 0;
+                            padding: 0;
+                            word-break: normal;
+                            text-align: right;
+                            color: #aaa;
+                            font-family: Consolas, 'Liberation Mono', Menlo,
+                              Courier, monospace !important;
+                            line-height: 25%;
+                          "
+                        >
+                          <div style="line-height: 25%">1</div>
+                          <div style="line-height: 25%">2</div>
+                          <div style="line-height: 25%">3</div>
+                          <div style="line-height: 25%">4</div>
+                          <div style="line-height: 25%">5</div>
+                          <div style="line-height: 25%">6</div>
+                          <div style="line-height: 25%">7</div>
+                          <div style="line-height: 25%">8</div>
+                          <div style="line-height: 25%">9</div>
+                          <div style="line-height: 25%">10</div>
+                          <div style="line-height: 25%">11</div>
+                          <div style="line-height: 25%">12</div>
+                          <div style="line-height: 25%">13</div>
+                          <div style="line-height: 25%">14</div>
+                          <div style="line-height: 25%">15</div>
+                          <div style="line-height: 25%">16</div>
+                          <div style="line-height: 25%">17</div>
+                          <div style="line-height: 25%">18</div>
+                          <div style="line-height: 25%">19</div>
+                          <div style="line-height: 25%">20</div>
+                          <div style="line-height: 25%">21</div>
                         </div>
-                    </details>                    
-                </li>
-                <li>
-                    <details>
-                        <summary class="fold_title">폼#셀렉터</summary>
-                        <div markdown="1">
-                            <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div><div style="line-height:25%">3</div><div style="line-height:25%">4</div><div style="line-height:25%">5</div><div style="line-height:25%">6</div><div style="line-height:25%">7</div><div style="line-height:25%">8</div><div style="line-height:25%">9</div><div style="line-height:25%">10</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">select</span>&nbsp;<span style="color:#a8ff58">name</span>=<span style="color:#ffd500">"birth"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">id</span>=<span style="color:#ffd500">""</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">option</span>&nbsp;<span style="color:#a8ff58">value</span>=<span style="color:#ffd500">"1980"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>1980<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">option</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">option</span>&nbsp;<span style="color:#a8ff58">value</span>=<span style="color:#ffd500">"1981"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>1981<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">option</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">option</span>&nbsp;<span style="color:#a8ff58">value</span>=<span style="color:#ffd500">"1982"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>1982<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">option</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">option</span>&nbsp;<span style="color:#a8ff58">value</span>=<span style="color:#ffd500">"1983"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>1983<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">option</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">option</span>&nbsp;<span style="color:#a8ff58">value</span>=<span style="color:#ffd500">"1984"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>1984<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">option</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">option</span>&nbsp;<span style="color:#a8ff58">value</span>=<span style="color:#ffd500">"1985"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>1985<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">option</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">select</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4ftext-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
-                            <p class="fold_desc">select태그 안에는 반드시 option태그만이 안에 들어갈 수 있다.</p>
+                      </td>
+                      <td style="padding: 6px 0; text-align: left">
+                        <div
+                          style="
+                            margin: 0;
+                            padding: 0;
+                            color: #f0f0f0;
+                            font-family: Consolas, 'Liberation Mono', Menlo,
+                              Courier, monospace !important;
+                            line-height: 25%;
+                          "
+                        >
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">table</span
+                            >&nbsp;<span style="color: #a8ff58">border</span
+                            >=<span style="color: #ffd500">"1"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >width</span
+                            >=<span style="color: #ffd500">"1200px"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">colgroup</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">col</span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >style</span
+                            >=<span style="color: #ffd500"
+                              >"width:&nbsp;10%"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >/</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">col</span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >style</span
+                            >=<span style="color: #ffd500"
+                              >"width:&nbsp;22.5%"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >/</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">col</span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >style</span
+                            >=<span style="color: #ffd500"
+                              >"width:&nbsp;22.5%"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >/</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">col</span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >style</span
+                            >=<span style="color: #ffd500"
+                              >"width:&nbsp;22.5%"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >/</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">col</span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >style</span
+                            >=<span style="color: #ffd500"
+                              >"width:&nbsp;22.5%"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >/</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">colgroup</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">tbody</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">tr</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">th</span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >rowspan</span
+                            >=<span style="color: #ffd500">"2"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            >학력사항<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            >재학기간<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span>학교명<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            >전공&nbsp;및&nbsp;성적<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span>소재지<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">tr</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">tr</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            ><span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            ><span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            ><span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            ><span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            ><span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            ><span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            ><span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">th</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">tr</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">tbody</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">table</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
                         </div>
-                    </details>                    
-                </li>
-                <li>
-                    <details>
-                        <summary class="fold_title">폼#기타</summary>
-                        <div markdown="1">
-                            <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div><div style="line-height:25%">3</div><div style="line-height:25%">4</div><div style="line-height:25%">5</div><div style="line-height:25%">6</div><div style="line-height:25%">7</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">textarea</span>&nbsp;<span style="color:#a8ff58">name</span>=<span style="color:#ffd500">"contents"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">id</span>=<span style="color:#ffd500">""</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">cols</span>=<span style="color:#ffd500">"30"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">rows</span>=<span style="color:#ffd500">"10"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">placeholder</span>=<span style="color:#ffd500">"글을&nbsp;입력하세요"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">textarea</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">input</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"email"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">placeholder</span>=<span style="color:#ffd500">"이메일을&nbsp;입력하세요."</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">name</span>=<span style="color:#ffd500">"email"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">input</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"date"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">placeholder</span>=<span style="color:#ffd500">"날짜를&nbsp;입력하세요."</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">name</span>=<span style="color:#ffd500">"date"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">button</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"submit"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>확인<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">button</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">button</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"reset"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>취소<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">button</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4ftext-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
-                            <p class="fold_desc">일반 text는 한줄 밖에 못쓰지만, textarea는 글을 많이 쓸 수 있다. <br>
-                                type에 email을 입력하면 email의 규칙(@)에 맞춰서 입력하게 할 수 있다. 그 밖에도 여러 정규 표현식이 있다. <br>
-                                type에 date를 입력하면 날짜 입력창이 뜨는데 이걸 datepicker라고 한다.</p>
+                        <div
+                          style="
+                            text-align: right;
+                            margin-top: -13px;
+                            margin-right: 5px;
+                            font-size: 9px;
+                            font-style: italic;
+                          "
+                        >
+                          <a
+                            href="http://colorscripter.com/info#e"
+                            target="_blank"
+                            style="color:#4f4f4ftext-decoration:none"
+                            >Colored by Color Scripter</a
+                          >
                         </div>
-                    </details>                    
-                </li>
-                <li>
-                    <details>
-                        <summary class="fold_title">HTML 데이터 속성 사용하기(data-, dataset)</summary>
-                        <div markdown="1">
-                            <p class="fold_desc">HTML 태그 안에 데이터 속성(data-)을 두어 그 데이터를 JS나 CSS에서 불러 쓸 수 있다.</p>
-                            <div>HTML <br>
-                                <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">nav</span>&nbsp;class-<span style="color:#ffd500">"gbn"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">data-age</span>=<span style="color:#ffd500">"12"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                      </td>
+                      <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                        <a
+                          href="http://colorscripter.com/info#e"
+                          target="_blank"
+                          style="text-decoration: none; color: white"
+                          ><span
+                            style="
+                              font-size: 9px;
+                              word-break: normal;
+                              background-color: #4f4f4f;
+                              color: white;
+                              border-radius: 10px;
+                              padding: 1px;
+                            "
+                            >cs</span
+                          ></a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="fold_title">폼#id password 입력</summary>
+              <div markdown="1">
+                <div
+                  class="colorscripter-code"
+                  style="
+                    color: #f0f0f0;
+                    font-family: Consolas, 'Liberation Mono', Menlo, Courier,
+                      monospace !important;
+                    width: 1000px;
+                    position: relative !important;
+                    overflow: auto;
+                  "
+                >
+                  <table
+                    class="colorscripter-code-table"
+                    style="
+                      margin: 0;
+                      padding: 0;
+                      border: none;
+                      background-color: #272727;
+                      border-radius: 4px;
+                    "
+                    cellspacing="0"
+                    cellpadding="0"
+                  >
+                    <tr>
+                      <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                        <div
+                          style="
+                            margin: 0;
+                            padding: 0;
+                            word-break: normal;
+                            text-align: right;
+                            color: #aaa;
+                            font-family: Consolas, 'Liberation Mono', Menlo,
+                              Courier, monospace !important;
+                            line-height: 25%;
+                          "
+                        >
+                          <div style="line-height: 25%">1</div>
+                          <div style="line-height: 25%">2</div>
+                          <div style="line-height: 25%">3</div>
+                          <div style="line-height: 25%">4</div>
+                          <div style="line-height: 25%">5</div>
+                          <div style="line-height: 25%">6</div>
+                          <div style="line-height: 25%">7</div>
+                          <div style="line-height: 25%">8</div>
+                          <div style="line-height: 25%">9</div>
+                          <div style="line-height: 25%">10</div>
+                          <div style="line-height: 25%">11</div>
+                          <div style="line-height: 25%">12</div>
+                          <div style="line-height: 25%">13</div>
+                          <div style="line-height: 25%">14</div>
+                          <div style="line-height: 25%">15</div>
+                          <div style="line-height: 25%">16</div>
+                          <div style="line-height: 25%">17</div>
+                          <div style="line-height: 25%">18</div>
+                          <div style="line-height: 25%">19</div>
+                        </div>
+                      </td>
+                      <td style="padding: 6px 0; text-align: left">
+                        <div
+                          style="
+                            margin: 0;
+                            padding: 0;
+                            color: #f0f0f0;
+                            font-family: Consolas, 'Liberation Mono', Menlo,
+                              Courier, monospace !important;
+                            line-height: 25%;
+                          "
+                        >
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">form</span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >action</span
+                            >=<span style="color: #ffd500">""</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">div</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">label</span
+                            >&nbsp;<span style="color: #a8ff58">for</span>=<span
+                              style="color: #ffd500"
+                              >"userID"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span>아이디<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">label</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">input</span
+                            >&nbsp;<span style="color: #a8ff58">type</span
+                            >=<span style="color: #ffd500">"text"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >name</span
+                            >=<span style="color: #ffd500">"id"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >id</span
+                            >=<span style="color: #ffd500">"userID"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >placeholder</span
+                            >=<span style="color: #ffd500"
+                              >"이름을&nbsp;쓰세요."</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >/</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">div</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">div</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">label</span
+                            >&nbsp;<span style="color: #a8ff58">for</span>=<span
+                              style="color: #ffd500"
+                              >"userPWD"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            >비밀번호<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">label</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">input</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                            ></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58">type</span
+                            >=<span style="color: #ffd500">"password"</span
+                            ><span style="color: #a8ff58"></span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                            ></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58">name</span
+                            >=<span style="color: #ffd500">"pwd"</span
+                            ><span style="color: #a8ff58"></span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                            ></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58">id</span>=<span
+                              style="color: #ffd500"
+                              >"userPWD"</span
+                            ><span style="color: #a8ff58"></span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                            ></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"
+                              >placeholder</span
+                            >=<span style="color: #ffd500"
+                              >"패스워드를&nbsp;입력하세요."</span
+                            ><span style="color: #a8ff58"></span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                            ></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58">required</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                            ></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58"></span
+                            >&nbsp;<span style="color: #a8ff58">/</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">div</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">button</span
+                            >&nbsp;<span style="color: #a8ff58">type</span
+                            >=<span style="color: #ffd500">"submit"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span>확인<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">button</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">button</span
+                            >&nbsp;<span style="color: #a8ff58">type</span
+                            >=<span style="color: #ffd500">"reset"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span>취소<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">button</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">input</span
+                            >&nbsp;<span style="color: #a8ff58">type</span
+                            >=<span style="color: #ffd500">"button"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >value</span
+                            >=<span style="color: #ffd500">"확인"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >/</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">form</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                        </div>
+                        <div
+                          style="
+                            text-align: right;
+                            margin-top: -13px;
+                            margin-right: 5px;
+                            font-size: 9px;
+                            font-style: italic;
+                          "
+                        >
+                          <a
+                            href="http://colorscripter.com/info#e"
+                            target="_blank"
+                            style="color:#4f4f4ftext-decoration:none"
+                            >Colored by Color Scripter</a
+                          >
+                        </div>
+                      </td>
+                      <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                        <a
+                          href="http://colorscripter.com/info#e"
+                          target="_blank"
+                          style="text-decoration: none; color: white"
+                          ><span
+                            style="
+                              font-size: 9px;
+                              word-break: normal;
+                              background-color: #4f4f4f;
+                              color: white;
+                              border-radius: 10px;
+                              padding: 1px;
+                            "
+                            >cs</span
+                          ></a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="fold_desc">
+                  required를 넣어주면 비어 있으면 벗어날 수 없다. <br />
+                  단, required를 쓰지 않고 자바 스크립트로 제어하는 방법도 있다.
+                  <br />
+                  취소 버튼의 경우 type에 리셋 설정을 해준다. <br />
+                  인풋 타입 버튼도 버튼을 만들 수 있지만 텍스트를 value안에
+                  적어야만 한다.
+                </p>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="fold_title">폼#체크박스</summary>
+              <div markdown="1">
+                <div
+                  class="colorscripter-code"
+                  style="
+                    color: #f0f0f0;
+                    font-family: Consolas, 'Liberation Mono', Menlo, Courier,
+                      monospace !important;
+                    width: 1000px;
+                    position: relative !important;
+                    overflow: auto;
+                  "
+                >
+                  <table
+                    class="colorscripter-code-table"
+                    style="
+                      margin: 0;
+                      padding: 0;
+                      border: none;
+                      background-color: #272727;
+                      border-radius: 4px;
+                    "
+                    cellspacing="0"
+                    cellpadding="0"
+                  >
+                    <tr>
+                      <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                        <div
+                          style="
+                            margin: 0;
+                            padding: 0;
+                            word-break: normal;
+                            text-align: right;
+                            color: #aaa;
+                            font-family: Consolas, 'Liberation Mono', Menlo,
+                              Courier, monospace !important;
+                            line-height: 25%;
+                          "
+                        >
+                          <div style="line-height: 25%">1</div>
+                          <div style="line-height: 25%">2</div>
+                          <div style="line-height: 25%">3</div>
+                          <div style="line-height: 25%">4</div>
+                          <div style="line-height: 25%">5</div>
+                          <div style="line-height: 25%">6</div>
+                          <div style="line-height: 25%">7</div>
+                          <div style="line-height: 25%">8</div>
+                          <div style="line-height: 25%">9</div>
+                          <div style="line-height: 25%">10</div>
+                        </div>
+                      </td>
+                      <td style="padding: 6px 0; text-align: left">
+                        <div
+                          style="
+                            margin: 0;
+                            padding: 0;
+                            color: #f0f0f0;
+                            font-family: Consolas, 'Liberation Mono', Menlo,
+                              Courier, monospace !important;
+                            line-height: 25%;
+                          "
+                        >
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">div</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">label</span
+                            ><span style="color: #f0f0f0">&gt;</span>영화<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">input</span
+                            >&nbsp;<span style="color: #a8ff58">type</span
+                            >=<span style="color: #ffd500">"checkbox"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >name</span
+                            >=<span style="color: #ffd500">"interest"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >value</span
+                            >=<span style="color: #ffd500">"영화"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >/</span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            ><span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">label</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">label</span
+                            ><span style="color: #f0f0f0">&gt;</span>독서<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">input</span
+                            >&nbsp;<span style="color: #a8ff58">type</span
+                            >=<span style="color: #ffd500">"checkbox"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >name</span
+                            >=<span style="color: #ffd500">"interest"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >value</span
+                            >=<span style="color: #ffd500">"독서"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >/</span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            ><span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">label</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">label</span
+                            ><span style="color: #f0f0f0">&gt;</span>바둑<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">input</span
+                            >&nbsp;<span style="color: #a8ff58">type</span
+                            >=<span style="color: #ffd500">"checkbox"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >name</span
+                            >=<span style="color: #ffd500">"interest"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >value</span
+                            >=<span style="color: #ffd500">"바둑"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >/</span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            ><span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">label</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">div</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">div</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">p</span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            >성별을&nbsp;입력하세요<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">p</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">label</span
+                            ><span style="color: #f0f0f0">&gt;</span>남자<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">input</span
+                            >&nbsp;<span style="color: #a8ff58">type</span
+                            >=<span style="color: #ffd500">"radio"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >name</span
+                            >=<span style="color: #ffd500">"gender"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >value</span
+                            >=<span style="color: #ffd500">"male"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >checked</span
+                            >&nbsp;<span style="color: #a8ff58">/</span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            ><span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">label</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">label</span
+                            ><span style="color: #f0f0f0">&gt;</span>여자<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">input</span
+                            >&nbsp;<span style="color: #a8ff58">type</span
+                            >=<span style="color: #ffd500">"radio"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >name</span
+                            >=<span style="color: #ffd500">"gender"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >value</span
+                            >=<span style="color: #ffd500">"female"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >/</span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            ><span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">label</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">div</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                        </div>
+                        <div
+                          style="
+                            text-align: right;
+                            margin-top: -13px;
+                            margin-right: 5px;
+                            font-size: 9px;
+                            font-style: italic;
+                          "
+                        >
+                          <a
+                            href="http://colorscripter.com/info#e"
+                            target="_blank"
+                            style="color:#4f4f4ftext-decoration:none"
+                            >Colored by Color Scripter</a
+                          >
+                        </div>
+                      </td>
+                      <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                        <a
+                          href="http://colorscripter.com/info#e"
+                          target="_blank"
+                          style="text-decoration: none; color: white"
+                          ><span
+                            style="
+                              font-size: 9px;
+                              word-break: normal;
+                              background-color: #4f4f4f;
+                              color: white;
+                              border-radius: 10px;
+                              padding: 1px;
+                            "
+                            >cs</span
+                          ></a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="fold_desc">
+                  하나만 선택해야 할 때는 radio를 쓰고, 다중 선택 가능할 때는
+                  checkbox를 쓴다. <br />
+                  항목이 여러개로 많을 때는 label로 묶으면 편하다. 단 for를
+                  지워야 한다. <br />
+                  checked를 쓰면 radio나 checkbox의 기본 값으로 선택하게 할 수
+                  있다.
+                </p>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="fold_title">폼#셀렉터</summary>
+              <div markdown="1">
+                <div
+                  class="colorscripter-code"
+                  style="
+                    color: #f0f0f0;
+                    font-family: Consolas, 'Liberation Mono', Menlo, Courier,
+                      monospace !important;
+                    width: 1000px;
+                    position: relative !important;
+                    overflow: auto;
+                  "
+                >
+                  <table
+                    class="colorscripter-code-table"
+                    style="
+                      margin: 0;
+                      padding: 0;
+                      border: none;
+                      background-color: #272727;
+                      border-radius: 4px;
+                    "
+                    cellspacing="0"
+                    cellpadding="0"
+                  >
+                    <tr>
+                      <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                        <div
+                          style="
+                            margin: 0;
+                            padding: 0;
+                            word-break: normal;
+                            text-align: right;
+                            color: #aaa;
+                            font-family: Consolas, 'Liberation Mono', Menlo,
+                              Courier, monospace !important;
+                            line-height: 25%;
+                          "
+                        >
+                          <div style="line-height: 25%">1</div>
+                          <div style="line-height: 25%">2</div>
+                          <div style="line-height: 25%">3</div>
+                          <div style="line-height: 25%">4</div>
+                          <div style="line-height: 25%">5</div>
+                          <div style="line-height: 25%">6</div>
+                          <div style="line-height: 25%">7</div>
+                          <div style="line-height: 25%">8</div>
+                          <div style="line-height: 25%">9</div>
+                          <div style="line-height: 25%">10</div>
+                        </div>
+                      </td>
+                      <td style="padding: 6px 0; text-align: left">
+                        <div
+                          style="
+                            margin: 0;
+                            padding: 0;
+                            color: #f0f0f0;
+                            font-family: Consolas, 'Liberation Mono', Menlo,
+                              Courier, monospace !important;
+                            line-height: 25%;
+                          "
+                        >
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">div</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">select</span
+                            >&nbsp;<span style="color: #a8ff58">name</span
+                            >=<span style="color: #ffd500">"birth"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >id</span
+                            >=<span style="color: #ffd500">""</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">option</span
+                            >&nbsp;<span style="color: #a8ff58">value</span
+                            >=<span style="color: #ffd500">"1980"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span>1980<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">option</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">option</span
+                            >&nbsp;<span style="color: #a8ff58">value</span
+                            >=<span style="color: #ffd500">"1981"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span>1981<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">option</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">option</span
+                            >&nbsp;<span style="color: #a8ff58">value</span
+                            >=<span style="color: #ffd500">"1982"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span>1982<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">option</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">option</span
+                            >&nbsp;<span style="color: #a8ff58">value</span
+                            >=<span style="color: #ffd500">"1983"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span>1983<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">option</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">option</span
+                            >&nbsp;<span style="color: #a8ff58">value</span
+                            >=<span style="color: #ffd500">"1984"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span>1984<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">option</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #ff3399">option</span
+                            >&nbsp;<span style="color: #a8ff58">value</span
+                            >=<span style="color: #ffd500">"1985"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span>1985<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">option</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">select</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">div</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                        </div>
+                        <div
+                          style="
+                            text-align: right;
+                            margin-top: -13px;
+                            margin-right: 5px;
+                            font-size: 9px;
+                            font-style: italic;
+                          "
+                        >
+                          <a
+                            href="http://colorscripter.com/info#e"
+                            target="_blank"
+                            style="color:#4f4f4ftext-decoration:none"
+                            >Colored by Color Scripter</a
+                          >
+                        </div>
+                      </td>
+                      <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                        <a
+                          href="http://colorscripter.com/info#e"
+                          target="_blank"
+                          style="text-decoration: none; color: white"
+                          ><span
+                            style="
+                              font-size: 9px;
+                              word-break: normal;
+                              background-color: #4f4f4f;
+                              color: white;
+                              border-radius: 10px;
+                              padding: 1px;
+                            "
+                            >cs</span
+                          ></a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="fold_desc">
+                  select태그 안에는 반드시 option태그만이 안에 들어갈 수 있다.
+                </p>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="fold_title">폼#기타</summary>
+              <div markdown="1">
+                <div
+                  class="colorscripter-code"
+                  style="
+                    color: #f0f0f0;
+                    font-family: Consolas, 'Liberation Mono', Menlo, Courier,
+                      monospace !important;
+                    width: 1000px;
+                    position: relative !important;
+                    overflow: auto;
+                  "
+                >
+                  <table
+                    class="colorscripter-code-table"
+                    style="
+                      margin: 0;
+                      padding: 0;
+                      border: none;
+                      background-color: #272727;
+                      border-radius: 4px;
+                    "
+                    cellspacing="0"
+                    cellpadding="0"
+                  >
+                    <tr>
+                      <td style="padding: 6px; border-right: 2px solid #4f4f4f">
+                        <div
+                          style="
+                            margin: 0;
+                            padding: 0;
+                            word-break: normal;
+                            text-align: right;
+                            color: #aaa;
+                            font-family: Consolas, 'Liberation Mono', Menlo,
+                              Courier, monospace !important;
+                            line-height: 25%;
+                          "
+                        >
+                          <div style="line-height: 25%">1</div>
+                          <div style="line-height: 25%">2</div>
+                          <div style="line-height: 25%">3</div>
+                          <div style="line-height: 25%">4</div>
+                          <div style="line-height: 25%">5</div>
+                          <div style="line-height: 25%">6</div>
+                          <div style="line-height: 25%">7</div>
+                        </div>
+                      </td>
+                      <td style="padding: 6px 0; text-align: left">
+                        <div
+                          style="
+                            margin: 0;
+                            padding: 0;
+                            color: #f0f0f0;
+                            font-family: Consolas, 'Liberation Mono', Menlo,
+                              Courier, monospace !important;
+                            line-height: 25%;
+                          "
+                        >
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">div</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">textarea</span
+                            >&nbsp;<span style="color: #a8ff58">name</span
+                            >=<span style="color: #ffd500">"contents"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >id</span
+                            >=<span style="color: #ffd500">""</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >cols</span
+                            >=<span style="color: #ffd500">"30"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >rows</span
+                            >=<span style="color: #ffd500">"10"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >placeholder</span
+                            >=<span style="color: #ffd500"
+                              >"글을&nbsp;입력하세요"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            ><span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">textarea</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">input</span
+                            >&nbsp;<span style="color: #a8ff58">type</span
+                            >=<span style="color: #ffd500">"email"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >placeholder</span
+                            >=<span style="color: #ffd500"
+                              >"이메일을&nbsp;입력하세요."</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >name</span
+                            >=<span style="color: #ffd500">"email"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            ><span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">div</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">div</span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            ><span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">input</span
+                            >&nbsp;<span style="color: #a8ff58">type</span
+                            >=<span style="color: #ffd500">"date"</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >placeholder</span
+                            >=<span style="color: #ffd500"
+                              >"날짜를&nbsp;입력하세요."</span
+                            ><span style="color: #a8ff58"></span>&nbsp;<span
+                              style="color: #a8ff58"
+                              >name</span
+                            >=<span style="color: #ffd500">"date"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span
+                            ><span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">div</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">button</span
+                            >&nbsp;<span style="color: #a8ff58">type</span
+                            >=<span style="color: #ffd500">"submit"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span>확인<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">button</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            &nbsp;&nbsp;<span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #ff3399">button</span
+                            >&nbsp;<span style="color: #a8ff58">type</span
+                            >=<span style="color: #ffd500">"reset"</span
+                            ><span style="color: #a8ff58"></span
+                            ><span style="color: #f0f0f0">&gt;</span>취소<span
+                              style="color: #f0f0f0"
+                              >&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">button</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                          <div
+                            style="
+                              padding: 0 6px;
+                              white-space: pre;
+                              line-height: 25%;
+                            "
+                          >
+                            <span style="color: #f0f0f0">&lt;</span
+                            ><span style="color: #f0f0f0">/</span
+                            ><span style="color: #ff3399">div</span
+                            ><span style="color: #f0f0f0">&gt;</span>
+                          </div>
+                        </div>
+                        <div
+                          style="
+                            text-align: right;
+                            margin-top: -13px;
+                            margin-right: 5px;
+                            font-size: 9px;
+                            font-style: italic;
+                          "
+                        >
+                          <a
+                            href="http://colorscripter.com/info#e"
+                            target="_blank"
+                            style="color:#4f4f4ftext-decoration:none"
+                            >Colored by Color Scripter</a
+                          >
+                        </div>
+                      </td>
+                      <td style="vertical-align: bottom; padding: 0 2px 4px 0">
+                        <a
+                          href="http://colorscripter.com/info#e"
+                          target="_blank"
+                          style="text-decoration: none; color: white"
+                          ><span
+                            style="
+                              font-size: 9px;
+                              word-break: normal;
+                              background-color: #4f4f4f;
+                              color: white;
+                              border-radius: 10px;
+                              padding: 1px;
+                            "
+                            >cs</span
+                          ></a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="fold_desc">
+                  일반 text는 한줄 밖에 못쓰지만, textarea는 글을 많이 쓸 수
+                  있다. <br />
+                  type에 email을 입력하면 email의 규칙(@)에 맞춰서 입력하게 할
+                  수 있다. 그 밖에도 여러 정규 표현식이 있다. <br />
+                  type에 date를 입력하면 날짜 입력창이 뜨는데 이걸
+                  datepicker라고 한다.
+                </p>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="fold_title">
+                HTML 데이터 속성 사용하기(data-, dataset)
+              </summary>
+              <div markdown="1">
+                <p class="fold_desc">
+                  HTML 태그 안에 데이터 속성(data-)을 두어 그 데이터를 JS나
+                  CSS에서 불러 쓸 수 있다.
+                </p>
+                <div>
+                  HTML <br />
+                  <div
+                    class="colorscripter-code"
+                    style="
+                      color: #f0f0f0;
+                      font-family: Consolas, 'Liberation Mono', Menlo, Courier,
+                        monospace !important;
+                      position: relative !important;
+                      overflow: auto;
+                    "
+                  >
+                    <table
+                      class="colorscripter-code-table"
+                      style="
+                        margin: 0;
+                        padding: 0;
+                        border: none;
+                        background-color: #272727;
+                        border-radius: 4px;
+                      "
+                      cellspacing="0"
+                      cellpadding="0"
+                    >
+                      <tr>
+                        <td
+                          style="padding: 6px; border-right: 2px solid #4f4f4f"
+                        >
+                          <div
+                            style="
+                              margin: 0;
+                              padding: 0;
+                              word-break: normal;
+                              text-align: right;
+                              color: #aaa;
+                              font-family: Consolas, 'Liberation Mono', Menlo,
+                                Courier, monospace !important;
+                              line-height: 130%;
+                            "
+                          >
+                            <div style="line-height: 130%">1</div>
+                          </div>
+                        </td>
+                        <td style="padding: 6px 0; text-align: left">
+                          <div
+                            style="
+                              margin: 0;
+                              padding: 0;
+                              color: #f0f0f0;
+                              font-family: Consolas, 'Liberation Mono', Menlo,
+                                Courier, monospace !important;
+                              line-height: 130%;
+                            "
+                          >
+                            <div
+                              style="
+                                padding: 0 6px;
+                                white-space: pre;
+                                line-height: 130%;
+                              "
+                            >
+                              <span style="color: #f0f0f0">&lt;</span
+                              ><span style="color: #ff3399">nav</span
+                              >&nbsp;class-<span style="color: #ffd500"
+                                >"gbn"</span
+                              ><span style="color: #a8ff58"></span>&nbsp;<span
+                                style="color: #a8ff58"
+                                >data-age</span
+                              >=<span style="color: #ffd500">"12"</span
+                              ><span style="color: #a8ff58"></span
+                              ><span style="color: #f0f0f0">&gt;</span>
                             </div>
-                            <div>CSS <br>
-                                <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div><div style="line-height:25%">3</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#ff3399">.gbn</span>[<span style="color:#a8ff58">data-age</span><span style="color:#ff3399">=</span><span style="color:#a8ff58">"12"</span>]<span style="color:#ff3399"></span>{<span style="color:#4be6fa"></span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#4be6fa">&nbsp;display</span><span style="color:#ff3399">:</span><span style="color:#E083FF">none</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#E083FF"></span>}</div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                          </div>
+                        </td>
+                        <td
+                          style="vertical-align: bottom; padding: 0 2px 4px 0"
+                        >
+                          <a
+                            href="http://colorscripter.com/info#e"
+                            target="_blank"
+                            style="text-decoration: none; color: white"
+                            ><span
+                              style="
+                                font-size: 9px;
+                                word-break: normal;
+                                background-color: #4f4f4f;
+                                color: white;
+                                border-radius: 10px;
+                                padding: 1px;
+                              "
+                              >cs</span
+                            ></a
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div>
+                  CSS <br />
+                  <div
+                    class="colorscripter-code"
+                    style="
+                      color: #f0f0f0;
+                      font-family: Consolas, 'Liberation Mono', Menlo, Courier,
+                        monospace !important;
+                      width: 1000px;
+                      position: relative !important;
+                      overflow: auto;
+                    "
+                  >
+                    <table
+                      class="colorscripter-code-table"
+                      style="
+                        margin: 0;
+                        padding: 0;
+                        border: none;
+                        background-color: #272727;
+                        border-radius: 4px;
+                      "
+                      cellspacing="0"
+                      cellpadding="0"
+                    >
+                      <tr>
+                        <td
+                          style="padding: 6px; border-right: 2px solid #4f4f4f"
+                        >
+                          <div
+                            style="
+                              margin: 0;
+                              padding: 0;
+                              word-break: normal;
+                              text-align: right;
+                              color: #aaa;
+                              font-family: Consolas, 'Liberation Mono', Menlo,
+                                Courier, monospace !important;
+                              line-height: 25%;
+                            "
+                          >
+                            <div style="line-height: 25%">1</div>
+                            <div style="line-height: 25%">2</div>
+                            <div style="line-height: 25%">3</div>
+                          </div>
+                        </td>
+                        <td style="padding: 6px 0; text-align: left">
+                          <div
+                            style="
+                              margin: 0;
+                              padding: 0;
+                              color: #f0f0f0;
+                              font-family: Consolas, 'Liberation Mono', Menlo,
+                                Courier, monospace !important;
+                              line-height: 25%;
+                            "
+                          >
+                            <div
+                              style="
+                                padding: 0 6px;
+                                white-space: pre;
+                                line-height: 25%;
+                              "
+                            >
+                              <span style="color: #ff3399">.gbn</span>[<span
+                                style="color: #a8ff58"
+                                >data-age</span
+                              ><span style="color: #ff3399">=</span
+                              ><span style="color: #a8ff58">"12"</span>]<span
+                                style="color: #ff3399"
+                              ></span
+                              >{<span style="color: #4be6fa"></span>
                             </div>
-                            <div>JS <br>
-                                <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#ff3399">const</span>&nbsp;el&nbsp;<span style="color:#aaffaa"></span><span style="color:#ff3399">=</span>&nbsp;<span style="color:#4be6fa">document</span>.querySelector(`.gbn`);</div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#4be6fa">console</span>.log(el.dataset.age);&nbsp;<span style="color:#999999">//&nbsp;"12"</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                            <div
+                              style="
+                                padding: 0 6px;
+                                white-space: pre;
+                                line-height: 25%;
+                              "
+                            >
+                              <span style="color: #4be6fa">&nbsp;display</span
+                              ><span style="color: #ff3399">:</span
+                              ><span style="color: #e083ff">none</span>
                             </div>
-                        </div>
-                    </details>                    
-                </li>
-                <li>
-                    <details>
-                        <summary class="fold_title">특정 파일에 대해 Prettier 적용을 제외시키는 방법</summary>
-                        <div markdown="1">
-                            <p class="fold_desc">vscode의 루트 폴더에 .prettierignore파일을 생성한 뒤, 제외하고 싶은 파일명을 쓰면 된다. <br>
-                                확장자는 불필요. 다만 예를 들어 html파일을 전부 다 제외하고 싶다면 *.html을 기입해 넣고 저장하면 된다. <br>
-                                이하와 같은 식으로~ </p>
-                                <img src="../images/others/prettierignore.png" alt="">
-                        </div>
-                    </details>                    
-                </li>
-                <li>
-                    <details>
-                        <summary class="fold_title"></summary>
-                        <div markdown="1">
-                            <p class="fold_desc"></p>
-                        </div>
-                    </details>                    
-                </li>
-            </ol>
-        </section>
-        <script>
-            const menubar = document.querySelector(".menubar");
-            window.addEventListener("scroll", function (e) {
-            if (window.scrollY > 0) {
-            menubar.classList.add("on"); 
+                            <div
+                              style="
+                                padding: 0 6px;
+                                white-space: pre;
+                                line-height: 25%;
+                              "
+                            >
+                              <span style="color: #e083ff"></span>}
+                            </div>
+                          </div>
+                        </td>
+                        <td
+                          style="vertical-align: bottom; padding: 0 2px 4px 0"
+                        >
+                          <a
+                            href="http://colorscripter.com/info#e"
+                            target="_blank"
+                            style="text-decoration: none; color: white"
+                            ><span
+                              style="
+                                font-size: 9px;
+                                word-break: normal;
+                                background-color: #4f4f4f;
+                                color: white;
+                                border-radius: 10px;
+                                padding: 1px;
+                              "
+                              >cs</span
+                            ></a
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div>
+                  JS <br />
+                  <div
+                    class="colorscripter-code"
+                    style="
+                      color: #f0f0f0;
+                      font-family: Consolas, 'Liberation Mono', Menlo, Courier,
+                        monospace !important;
+                      width: 1000px;
+                      position: relative !important;
+                      overflow: auto;
+                    "
+                  >
+                    <table
+                      class="colorscripter-code-table"
+                      style="
+                        margin: 0;
+                        padding: 0;
+                        border: none;
+                        background-color: #272727;
+                        border-radius: 4px;
+                      "
+                      cellspacing="0"
+                      cellpadding="0"
+                    >
+                      <tr>
+                        <td
+                          style="padding: 6px; border-right: 2px solid #4f4f4f"
+                        >
+                          <div
+                            style="
+                              margin: 0;
+                              padding: 0;
+                              word-break: normal;
+                              text-align: right;
+                              color: #aaa;
+                              font-family: Consolas, 'Liberation Mono', Menlo,
+                                Courier, monospace !important;
+                              line-height: 25%;
+                            "
+                          >
+                            <div style="line-height: 25%">1</div>
+                            <div style="line-height: 25%">2</div>
+                          </div>
+                        </td>
+                        <td style="padding: 6px 0; text-align: left">
+                          <div
+                            style="
+                              margin: 0;
+                              padding: 0;
+                              color: #f0f0f0;
+                              font-family: Consolas, 'Liberation Mono', Menlo,
+                                Courier, monospace !important;
+                              line-height: 25%;
+                            "
+                          >
+                            <div
+                              style="
+                                padding: 0 6px;
+                                white-space: pre;
+                                line-height: 25%;
+                              "
+                            >
+                              <span style="color: #ff3399">const</span
+                              >&nbsp;el&nbsp;<span style="color: #aaffaa"></span
+                              ><span style="color: #ff3399">=</span>&nbsp;<span
+                                style="color: #4be6fa"
+                                >document</span
+                              >.querySelector(`.gbn`);
+                            </div>
+                            <div
+                              style="
+                                padding: 0 6px;
+                                white-space: pre;
+                                line-height: 25%;
+                              "
+                            >
+                              <span style="color: #4be6fa">console</span
+                              >.log(el.dataset.age);&nbsp;<span
+                                style="color: #999999"
+                                >//&nbsp;"12"</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                        <td
+                          style="vertical-align: bottom; padding: 0 2px 4px 0"
+                        >
+                          <a
+                            href="http://colorscripter.com/info#e"
+                            target="_blank"
+                            style="text-decoration: none; color: white"
+                            ><span
+                              style="
+                                font-size: 9px;
+                                word-break: normal;
+                                background-color: #4f4f4f;
+                                color: white;
+                                border-radius: 10px;
+                                padding: 1px;
+                              "
+                              >cs</span
+                            ></a
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="fold_title">
+                특정 파일에 대해 Prettier 적용을 제외시키는 방법
+              </summary>
+              <div markdown="1">
+                <p class="fold_desc">
+                  vscode의 루트 폴더에 .prettierignore파일을 생성한 뒤, 제외하고
+                  싶은 파일명을 쓰면 된다. <br />
+                  확장자는 불필요. 다만 예를 들어 html파일을 전부 다 제외하고
+                  싶다면 *.html을 기입해 넣고 저장하면 된다. <br />
+                  이하와 같은 식으로~
+                </p>
+                <img src="../images/others/prettierignore.png" alt="" />
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="fold_title"></summary>
+              <div markdown="1">
+                <p class="fold_desc"></p>
+              </div>
+            </details>
+          </li>
+        </ol>
+      </section>
+      <script>
+        const menubar = document.querySelector(".menubar");
+        window.addEventListener("scroll", function (e) {
+          if (window.scrollY > 0) {
+            menubar.classList.add("on");
+          } else {
+            menubar.classList.remove("on");
           }
-          else{
-            menubar.classList.remove("on"); 
-          }
-          });
-          </script>
+        });
+      </script>
     </main>
-</body>
+  </body>
 </html>

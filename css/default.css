@@ -1,138 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 :root {
-    --blue: #1580ff;}
-*{
-    font-family: 'Noto Sans KR', sans-serif;
-    line-height: 1.5;
+  --blue: #1580ff;
 }
-a{
-    text-decoration: none;
-    font-family: 'Noto Sans KR', sans-serif;
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.5;
 }
-section{
-    width: 1000px;
-    margin: 0 auto;
+a {
+  text-decoration: none;
+  font-family: "Noto Sans KR", sans-serif;
 }
-h1{
-    font-size: 75px;
-    font-weight: 700;
-    margin-top: 60px;
+section {
+  width: 1000px;
+  margin: 0 auto;
 }
-h2{
-    font-size: 50px;
-    font-weight: 700;
-    margin-top: 45px;
+h1 {
+  font-size: 75px;
+  font-weight: 700;
+  margin-top: 60px;
 }
-h3{
-    font-size: 35px;
-    font-weight: 700;
-    margin-top: 30px;
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 45px;
 }
-h4{
-    font-size: 25px;
-    font-weight: 700;
-    margin-top: 20px;
+h3 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 30px;
 }
-h5{
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 15px;
+h4 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 20px;
 }
-h6{
-    font-size: 15px;
-    font-weight: 700;
-    margin-top: 10px;
+h5 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 15px;
 }
-body{
-    background-color: #121212;
-    color: white;
+h6 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+body {
+  background-color: #121212;
+  color: white;
 }
 img {
-    vertical-align: top;
+  vertical-align: top;
 }
-div{
-    margin-top: 20px;
+div {
+  margin-top: 20px;
 }
-a { text-decoration: none; color: white;}
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:focus { text-decoration: none; }
-a:hover, a:active { text-decoration: none; }
-details{
-    margin-top: 15px;
+a {
+  text-decoration: none;
+  color: white;
 }
-p{
-    line-height: 1.5;
-    margin-bottom: 20px;
+a:visited {
+  text-decoration: none;
 }
-details{
-    display:block;
-    border: 1px solid rgb(220, 220, 220);
-    cursor: pointer;
+a:hover {
+  text-decoration: none;
 }
-summary{
-    background: rgb(220, 220, 220);
-    font-size:20px;
-    font-weight:bold;
+a:focus {
+  text-decoration: none;
 }
-header.on{
-    display: none;
+a:hover,
+a:active {
+  text-decoration: none;
+}
+details {
+  margin-top: 15px;
+}
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+details {
+  display: block;
+  border: 1px solid rgb(220, 220, 220);
+  cursor: pointer;
+}
+summary {
+  background: rgb(220, 220, 220);
+  font-size: 20px;
+  font-weight: bold;
+}
+header.on {
+  display: none;
 }
 /* ======================================================================클래스 설정 */
-.front{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    height: 10000px;
+.front {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  height: 10000px;
 }
-.body_nocolor{
-    background-color: rgba(0, 0, 0,0);
+.body_nocolor {
+  background-color: rgba(0, 0, 0, 0);
 }
-.body_terms > section{
-    width: 395px;
+.body_terms > section {
+  width: 395px;
 }
-.colorscripter-code{
-    margin-top: 0px;
+.colorscripter-code {
+  margin-top: 0px;
 }
-.fold_title{
-    color: #111;
+.fold_title {
+  color: #111;
 }
-.fold_title > div > p{
-    margin-top: -50px;
+.fold_title > div > p {
+  margin-top: -50px;
 }
-.sc_title{
-    display: flex;
-    margin-bottom: 100px;
+.sc_title {
+  display: flex;
+  margin-bottom: 100px;
 }
-.side_left, .side_right{
-    min-width: 400px;
+.side_left,
+.side_right {
+  min-width: 400px;
 }
-.useful_sites > li > a{
-    display: block;
-    color: var(--blue);
-    font-size: 15px;
-    padding: 5px 0;
+.useful_sites > li > a {
+  display: block;
+  color: var(--blue);
+  font-size: 15px;
+  padding: 5px 0;
 }
-.useful_sites > li > a:hover{
-    color: white;
+.useful_sites > li > a:hover {
+  color: white;
 }
-.fold_title:hover{
-    color: white;
+.fold_title:hover {
+  color: white;
 }
 .iframe100 {
-    border: none;
-    width: 395px;
-    height: 100%;
+  border: none;
+  width: 395px;
+  height: 100%;
 }
-.sand_link{
-    color: var(--blue);
+.sand_link {
+  color: var(--blue);
 }
-.sand_link:hover{
-    color:white
+.sand_link:hover {
+  color: white;
 }
-.bg_video{
-    position: fixed;
-    z-index: -99;
-    top: 0;
-    left: 0;
+.bg_video {
+  position: fixed;
+  z-index: -99;
+  top: 0;
+  left: 0;
 }
