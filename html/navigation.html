@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exitdb</title>
+    <link rel="shortcut icon" href="../images/icons/exitdb_favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <script src="../js/aos.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <video class="bg_video" src="../videos/Blue.mp4" autoplay loop muted></video>
+    <script>
+        const header = document.querySelector(".header");
+        window.addEventListener("scroll", function (e) {
+        if (window.scrollY > 0) {
+        header.classList.add("on"); 
+      }
+      else{
+        header.classList.remove("on"); 
+      }
+      });
+      </script>
+</body>
+</html>

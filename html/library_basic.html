@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>라이브러리 기초</title>
+    <link rel="shortcut icon" href="../images/icons/exitdb_favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <script src="../js/aos.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+          <a href="../index.html"><p>HOME</p></a>
+          <ul class="menubar">
+            <li>
+              <a href="html_basic.html">HTML 기초</a>
+            </li>
+            <li>
+              <a href="css_basic.html">CSS 기초</a>
+            </li>
+            <li>
+              <a href="js_basic.html">Javascript 기초</a>
+            </li>
+            <li>
+              <a href="library_basic.html">라이브러리 기초</a>
+            </li>
+            <li>
+              <a href="terms.html">용어정리</a>
+            </li>
+          </ul>
+          <a href="../index.html"><p>HOME</p></a>
+        </nav>
+      </header>
+      <main>   
+            <section class="section library_basic">
+            <h2 class="title">라이브러리 기초</h2>
+            <h3 class="title">라이브러리 활용</h3>
+            <ol>
+                <li>
+                    <details>
+                        <summary class="fold_title">(1) aos 쓰는 법</summary>
+                        <div markdown="1">
+                            <p>
+                                1) head부에 아래 항목 추가 ※css, js파일은 관련 홈페이지에서 다운받거나 웹링크 버전을 이용 <br>
+                                <div>
+                                    HTML
+                                    <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">link</span>&nbsp;<span style="color:#a8ff58">rel</span>=<span style="color:#ffd500">"stylesheet"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">href</span>=<span style="color:#ffd500">"../css/aos.css"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">script</span>&nbsp;<span style="color:#a8ff58">src</span>=<span style="color:#ffd500">"../js/aos.js"</span><span style="color:#ff3399"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">script</span><span style="color:#f0f0f0">&gt;</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                                </div>
+                            </p>
+                            <p>
+                                2) &lt;script&gt;에 아래 항목 추가 <br>
+                                <div>
+                                    Javascript
+                                    <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div><div style="line-height:25%">3</div><div style="line-height:25%">4</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%">AOS.init({</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;duration:&nbsp;<span style="color:#c10aff">1000</span>,</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;delay:&nbsp;<span style="color:#c10aff">500</span>,</div><div style="padding:0 6px; white-space:pre; line-height:25%">});</div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                                </div>
+                            </p>
+                            <p>
+                                3) 효과를 넣고 싶은 태그의 클래스에 data-aos="fade-left"  등을 넣으면 동작함. <br>
+                                옵션으로 data-aos-delay="500" 또는 data-aos-duration="1000" 등도 넣을 수 있음. <br>
+                            </p>
+                        </div>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="fold_title">(2) swiper-wrapper 쓰는 법(이미지 파일 늘어놓기)</summary>
+                        <div markdown="1">
+                            <p>
+                                1) head부에 아래 항목 추가 ※css, js파일은 관련 홈페이지에서 다운받거나 웹링크 버전을 이용 <br>
+                                <div>
+                                    HTML
+                                    <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">link</span>&nbsp;<span style="color:#a8ff58">rel</span>=<span style="color:#ffd500">"stylesheet"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">href</span>=<span style="color:#ffd500">"../css/swiper-bundle.min.css"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">script</span>&nbsp;<span style="color:#a8ff58">src</span>=<span style="color:#ffd500">"../js/swiper-bundle.min.js"</span><span style="color:#ff3399"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">script</span><span style="color:#f0f0f0">&gt;</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                                </div>
+                            </p>
+                            <p>
+                                2) &lt;script&gt;에 아래 항목 추가 <br>
+                                <div>
+                                    Javascript
+                                    <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div><div style="line-height:25%">3</div><div style="line-height:25%">4</div><div style="line-height:25%">5</div><div style="line-height:25%">6</div><div style="line-height:25%">7</div><div style="line-height:25%">8</div><div style="line-height:25%">9</div><div style="line-height:25%">10</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#ff3399">const</span>&nbsp;swiper&nbsp;<span style="color:#aaffaa"></span><span style="color:#ff3399">=</span>&nbsp;<span style="color:#ff3399">new</span>&nbsp;Swiper(<span style="color:#ffd500">".news-banner"</span>,&nbsp;{</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;slidesPerView:&nbsp;<span style="color:#c10aff">3</span>,&nbsp;<span style="color:#999999">//←한번에&nbsp;보이는&nbsp;사진의&nbsp;개수</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;spaceBetween:&nbsp;<span style="color:#c10aff">20</span>,&nbsp;<span style="color:#999999">//←사진&nbsp;사이의&nbsp;간격(px단위)</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;loop:&nbsp;<span style="color:#ff3399">true</span>,&nbsp;<span style="color:#999999">//←&nbsp;사진이&nbsp;연속적으로&nbsp;나타나게&nbsp;하고&nbsp;싶을&nbsp;때</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;navigation:&nbsp;{</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#999999">//←Navigation&nbsp;arrows넣고&nbsp;싶을&nbsp;때</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;nextEl:&nbsp;<span style="color:#ffd500">".news-banner&nbsp;.btn--next"</span>,&nbsp;<span style="color:#999999">//←다음&nbsp;사진으로&nbsp;넘어가기&nbsp;위한&nbsp;단추&nbsp;지정</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;prevEl:&nbsp;<span style="color:#ffd500">".news-banner&nbsp;.btn--prev"</span>,&nbsp;<span style="color:#999999">//←이전&nbsp;사진으로&nbsp;돌아가기&nbsp;위한&nbsp;단추&nbsp;지정</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;},</div><div style="padding:0 6px; white-space:pre; line-height:25%">});</div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4ftext-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                                </div>
+                            </p>
+                            <p>
+                                3) 본문에는 swiper-wrapper 클래스와 swiper-slide 클래스를 아래와 같이 배치 <br>
+                                <div>
+                                    HTML
+                                    <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div><div style="line-height:25%">3</div><div style="line-height:25%">4</div><div style="line-height:25%">5</div><div style="line-height:25%">6</div><div style="line-height:25%">7</div><div style="line-height:25%">8</div><div style="line-height:25%">9</div><div style="line-height:25%">10</div><div style="line-height:25%">11</div><div style="line-height:25%">12</div><div style="line-height:25%">13</div><div style="line-height:25%">14</div><div style="line-height:25%">15</div><div style="line-height:25%">16</div><div style="line-height:25%">17</div><div style="line-height:25%">18</div><div style="line-height:25%">19</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">div</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"news-banner"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">ul</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"news-banner__list&nbsp;swiper-wrapper"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">li</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"swiper-slide"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">img</span>&nbsp;<span style="color:#a8ff58">src</span>=<span style="color:#ffd500">"https://picsum.photos/id/1/450/300"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">alt</span>=<span style="color:#ffd500">""</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">li</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">li</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"swiper-slide"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">img</span>&nbsp;<span style="color:#a8ff58">src</span>=<span style="color:#ffd500">"https://picsum.photos/id/2/450/300"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">alt</span>=<span style="color:#ffd500">""</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">li</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">li</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"swiper-slide"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">img</span>&nbsp;<span style="color:#a8ff58">src</span>=<span style="color:#ffd500">"https://picsum.photos/id/3/450/300"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">alt</span>=<span style="color:#ffd500">""</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">/</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">li</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">ul</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">button</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"btn&nbsp;btn--round&nbsp;btn--fixed&nbsp;btn--next"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">span</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"material-icons"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;arrow_forward</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">span</span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">button</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">button</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"btn&nbsp;btn--round&nbsp;btn--fixed&nbsp;&nbsp;btn--prev"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">span</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"material-icons"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;arrow_back</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">span</span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">button</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4ftext-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                                </div>
+                            </p>
+                        </div>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="fold_title"></summary>
+                        <div markdown="1">
+                        </div>
+                    </details>
+                </li>
+            </ol>
+              </section>
+      </main>
+    <script>
+        const menubar = document.querySelector(".menubar");
+        window.addEventListener("scroll", function (e) {
+        if (window.scrollY > 0) {
+        menubar.classList.add("on"); 
+      }
+      else{
+        menubar.classList.remove("on"); 
+      }
+      });
+      </script>
+</body>
+</html>

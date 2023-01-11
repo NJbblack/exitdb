@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js 기초</title>
+    <link rel="shortcut icon" href="../images/icons/exitdb_favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <script src="../js/aos.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+          <a href="../index.html"><p>HOME</p></a>
+          <ul class="menubar">
+            <li>
+              <a href="html_basic.html">HTML 기초</a>
+            </li>
+            <li>
+              <a href="css_basic.html">CSS 기초</a>
+            </li>
+            <li>
+              <a href="js_basic.html">Javascript 기초</a>
+            </li>
+            <li>
+              <a href="library_basic.html">라이브러리 기초</a>
+            </li>
+            <li>
+              <a href="terms.html">용어정리</a>
+            </li>
+          </ul>
+          <a href="../index.html"><p>HOME</p></a>
+        </nav>
+      </header>
+    <main>
+        <section class="section js_basic">
+        <h2 class="title">Javascript 기초</h2>
+            <h3 class="title">자바 스크립트 기초 제어</h3>
+            <ol>
+                <li>
+                    <details>
+                        <summary class="fold_title">(1) 마우스 스크롤 시, console로고에 문자 출력</summary>
+                        <div markdown="1">
+                            <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div><div style="line-height:25%">3</div><div style="line-height:25%">4</div><div style="line-height:25%">5</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#4be6fa">window</span>.<span style="color:#4be6fa">addEventListener</span>(<span style="color:#ffd500">"scroll"</span>,&nbsp;<span style="color:#ff3399">function</span>&nbsp;()&nbsp;{</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#4be6fa">console</span>.log(</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ffd500">"나는&nbsp;드디어&nbsp;사용자가&nbsp;일으키는&nbsp;이벤트&nbsp;중에&nbsp;scroll&nbsp;이벤트를&nbsp;감지할&nbsp;수&nbsp;있게&nbsp;되었습니다."</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;);</div><div style="padding:0 6px; white-space:pre; line-height:25%">});</div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4ftext-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                        </div>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="fold_title">(2) 마우스 클릭 시, 경고창 띄우기</summary>
+                        <div markdown="1">
+                            <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div><div style="line-height:25%">3</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#4be6fa">window</span>.<span style="color:#4be6fa">addEventListener</span>(<span style="color:#ffd500">"click"</span>,&nbsp;<span style="color:#ff3399">function</span>&nbsp;()&nbsp;{</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#4be6fa">alert</span>(<span style="color:#ffd500">"클릭했지?"</span>);</div><div style="padding:0 6px; white-space:pre; line-height:25%">});</div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4ftext-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                        </div>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="fold_title">(3) 마우스 스크롤 시, header클래스에 on을 붙여서 header on클래스로 일시적으로 만들어버리는 방법</summary>
+                        <div markdown="1">
+                            <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div><div style="line-height:25%">3</div><div style="line-height:25%">4</div><div style="line-height:25%">5</div><div style="line-height:25%">6</div><div style="line-height:25%">7</div><div style="line-height:25%">8</div><div style="line-height:25%">9</div><div style="line-height:25%">10</div><div style="line-height:25%">11</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#ff3399">const</span>&nbsp;header&nbsp;<span style="color:#aaffaa"></span><span style="color:#ff3399">=</span>&nbsp;<span style="color:#4be6fa">document</span>.querySelector(<span style="color:#ffd500">".header"</span>);&nbsp;<span style="color:#999999">//←header를&nbsp;선언</span></div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#4be6fa">window</span>.<span style="color:#4be6fa">addEventListener</span>(<span style="color:#ffd500">"scroll"</span>,&nbsp;<span style="color:#ff3399">function</span>&nbsp;(e)&nbsp;{</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#999999">//←함수&nbsp;선언</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#ff3399">if</span>&nbsp;(<span style="color:#4be6fa">window</span>.scrollY&nbsp;<span style="color:#aaffaa"></span><span style="color:#ff3399">&gt;</span>&nbsp;<span style="color:#c10aff">0</span>)&nbsp;{</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#999999">//←만약&nbsp;스크롤이&nbsp;발생하면</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;header.classList.add(<span style="color:#ffd500">"on"</span>);&nbsp;<span style="color:#999999">//←header의&nbsp;클래스&nbsp;리스트에&nbsp;"on"을&nbsp;추가</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;}&nbsp;<span style="color:#ff3399">else</span>&nbsp;{</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;header.classList.remove(<span style="color:#ffd500">"on"</span>);&nbsp;<span style="color:#999999">//←header의&nbsp;클래스&nbsp;리스트에&nbsp;"on"을&nbsp;제거</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;}</div><div style="padding:0 6px; white-space:pre; line-height:25%">});</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;</div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4ftext-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                        </div>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="fold_title">(4) 마우스 스크롤 시, btn-top클래스에 on을 붙여서 btn-top on클래스로 일시적으로 만들어 버리고,
+                            btn-top 개체를 마우스로 클릭하였을 때 화면 가장 위쪽으로 이동시키는 방법</summary>
+                        <div markdown="1">
+                            <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div><div style="line-height:25%">3</div><div style="line-height:25%">4</div><div style="line-height:25%">5</div><div style="line-height:25%">6</div><div style="line-height:25%">7</div><div style="line-height:25%">8</div><div style="line-height:25%">9</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#ff3399">const</span>&nbsp;btnTop&nbsp;<span style="color:#aaffaa"></span><span style="color:#ff3399">=</span>&nbsp;<span style="color:#4be6fa">document</span>.querySelector(<span style="color:#ffd500">".btn-top"</span>);&nbsp;<span style="color:#999999">//←btnTop을&nbsp;선언(!)</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">btnTop.<span style="color:#4be6fa">addEventListener</span>(<span style="color:#ffd500">"click"</span>,&nbsp;<span style="color:#ff3399">function</span>(){&nbsp;<span style="color:#999999">//←btnTop에&nbsp;&nbsp;클릭&nbsp;발생시&nbsp;함수&nbsp;작동</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#4be6fa">window</span>.scrollTo({top:<span style="color:#c10aff">0</span>,&nbsp;behavior:&nbsp;<span style="color:#ffd500">"smooth"</span>});&nbsp;<span style="color:#999999">//←윈도우를&nbsp;top:0위치로&nbsp;"smooth"하게&nbsp;이동.</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">});</div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#4be6fa">window</span>.<span style="color:#4be6fa">addEventListener</span>(<span style="color:#ffd500">"scroll"</span>,<span style="color:#ff3399">function</span>(e){&nbsp;<span style="color:#999999">//←함수&nbsp;선언</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#ff3399">if</span>(<span style="color:#4be6fa">window</span>.scrollY&nbsp;<span style="color:#aaffaa"></span><span style="color:#ff3399">&gt;</span>&nbsp;<span style="color:#c10aff">0</span>){&nbsp;<span style="color:#999999">//←만약&nbsp;스크롤이&nbsp;발생하면</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;btnTop.classList.add(<span style="color:#ffd500">"on"</span>);&nbsp;<span style="color:#999999">//←btnTop의&nbsp;클래스&nbsp;리스트에&nbsp;"on"을&nbsp;추가</span></div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;}&nbsp;<span style="color:#ff3399">else</span>{</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;btnTop.classList.remove(<span style="color:#ffd500">"on"</span>);&nbsp;<span style="color:#999999">//←btnTop의&nbsp;클래스&nbsp;리스트에&nbsp;"on"을&nbsp;제거</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                        </div>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="fold_title">(5) 상기한 두 방법을 동시에 한번에 쓰기</summary>
+                        <div markdown="1">
+                            <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:1000px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="line-height:25%">1</div><div style="line-height:25%">2</div><div style="line-height:25%">3</div><div style="line-height:25%">4</div><div style="line-height:25%">5</div><div style="line-height:25%">6</div><div style="line-height:25%">7</div><div style="line-height:25%">8</div><div style="line-height:25%">9</div><div style="line-height:25%">10</div><div style="line-height:25%">11</div><div style="line-height:25%">12</div><div style="line-height:25%">13</div><div style="line-height:25%">14</div><div style="line-height:25%">15</div><div style="line-height:25%">16</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:25%"><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#ff3399">const</span>&nbsp;header&nbsp;<span style="color:#aaffaa"></span><span style="color:#ff3399">=</span>&nbsp;<span style="color:#4be6fa">document</span>.querySelector(<span style="color:#ffd500">".header"</span>);</div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#ff3399">const</span>&nbsp;btnTop&nbsp;<span style="color:#aaffaa"></span><span style="color:#ff3399">=</span>&nbsp;<span style="color:#4be6fa">document</span>.querySelector(<span style="color:#ffd500">".btn-top"</span>);</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:25%">btnTop.<span style="color:#4be6fa">addEventListener</span>(<span style="color:#ffd500">"click"</span>,&nbsp;<span style="color:#ff3399">function</span>&nbsp;()&nbsp;{</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#4be6fa">window</span>.scrollTo({&nbsp;top:&nbsp;<span style="color:#c10aff">0</span>,&nbsp;behavior:&nbsp;<span style="color:#ffd500">"smooth"</span>&nbsp;});</div><div style="padding:0 6px; white-space:pre; line-height:25%">});</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:25%"><span style="color:#4be6fa">window</span>.<span style="color:#4be6fa">addEventListener</span>(<span style="color:#ffd500">"scroll"</span>,&nbsp;<span style="color:#ff3399">function</span>&nbsp;(e)&nbsp;{</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;<span style="color:#ff3399">if</span>&nbsp;(<span style="color:#4be6fa">window</span>.scrollY&nbsp;<span style="color:#aaffaa"></span><span style="color:#ff3399">&gt;</span>&nbsp;<span style="color:#c10aff">0</span>)&nbsp;{</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;header.classList.add(<span style="color:#ffd500">"on"</span>);</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;btnTop.classList.add(<span style="color:#ffd500">"on"</span>);</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;}&nbsp;<span style="color:#ff3399">else</span>&nbsp;{</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;header.classList.remove(<span style="color:#ffd500">"on"</span>);</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;&nbsp;&nbsp;btnTop.classList.remove(<span style="color:#ffd500">"on"</span>);</div><div style="padding:0 6px; white-space:pre; line-height:25%">&nbsp;&nbsp;}</div><div style="padding:0 6px; white-space:pre; line-height:25%">});</div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4ftext-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                        </div>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="fold_title">(6) 자바 스크립트로 마우스 메뉴창 호버 시 서브 메뉴 열리게 만들기</summary>
+                        <div markdown="1">
+                        </div>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="fold_title"></summary>
+                        <div markdown="1">
+                        </div>
+                    </details>
+                </li>
+            </ol>
+        </section>
+    </main>
+    <script>
+        const menubar = document.querySelector(".menubar");
+        window.addEventListener("scroll", function (e) {
+        if (window.scrollY > 0) {
+        menubar.classList.add("on"); 
+      }
+      else{
+        menubar.classList.remove("on"); 
+      }
+      });
+      </script>
+</body>
+</html>

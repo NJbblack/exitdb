@@ -1,0 +1,232 @@
+.exp_comment{
+    margin-bottom: -35px;
+    margin-top: 20px;
+}
+.sandbox_section{
+    border: 1px solid white;
+    padding: 20px;
+}
+.sandbox_title{
+    text-align: center;
+}
+/* =======================================================남은 여백 챙겨가기(flex grow 활용) */
+.block_align{
+    display: flex;
+    color: black;
+}
+.block_align .red_block{
+    background-color: red;
+    width: 200px;
+}
+.block_align .yel_block{
+    background-color: yellow;
+    width: 200px;
+}
+.block_align .blue_block{
+    background-color: blue;
+    width: 200px;
+}
+/* ==================================실험1 */
+.block_align .red_block1{
+    background-color: red;
+    width: 200px;
+    flex-grow: 1;
+}
+.block_align .yel_block1{
+    background-color: yellow;
+    width: 200px;
+    flex-grow: 1;
+}
+.block_align .blue_block1{
+    background-color: blue;
+    width: 200px;
+    flex-grow: 1;
+}
+/* ==================================실험2 */
+.block_align .red_block2{
+    background-color: red;
+    width: 200px;
+}
+.block_align .yel_block2{
+    background-color: yellow;
+    width: 200px;
+}
+.block_align .blue_block2{
+    background-color: blue;
+    width: 200px;
+    flex-grow: 2;
+}
+/* ==================================실험3 */
+.block_align .red_block3{
+    background-color: red;
+    width: 200px;
+    flex-grow: 3;
+}
+.block_align .yel_block3{
+    background-color: yellow;
+    width: 200px;
+}
+.block_align .blue_block3{
+    background-color: blue;
+    width: 200px;
+    flex-grow: 3;
+}
+/* ======================================================== 서브메뉴바 펼치기(display:none) */
+.sandbox_menu{
+    display: flex;
+}
+.sandbox_menu > li > a{
+    padding: 0 10px;
+    border: 1px solid black;
+    background-color: white;   
+    color: black;
+}
+.sandbox_submenu{
+    display: none;
+}
+.sandbox_submenu > li > a{
+    padding: 0 10px;
+    border: 1px solid black;
+    background-color: white;   
+    color: black;
+}
+.sandbox_menu > li > a:hover{
+    color: white;
+}
+.sandbox_menu > li:hover > ul {
+    display: flex;
+    flex-direction: column;
+}
+.sandbox_submenu > li > a:hover{
+    color: white;
+}
+/* ==============================================서브메뉴바 펼치기(height:0 overflow:hidden) */
+.sandbox_menu1{
+    display: flex;
+}
+.sandbox_menu1 > li > a{
+    padding: 0 10px;
+    border: 1px solid black;
+    background-color: white;   
+    color: black;
+}
+.sandbox_submenu1{
+    height: 0;
+    overflow: hidden;
+}
+.sandbox_submenu1 > li > a{
+    padding: 0 10px;
+    border: 1px solid black;
+    background-color: white;   
+    color: black;
+}
+.sandbox_menu1 > li > a:hover{
+    color: white;
+}
+.sandbox_menu1 > li:hover > ul {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.sandbox_submenu1 > li > a:hover{
+    color: white;
+}
+/* ===============================================간격이 있는 서브메뉴바 펼치기(display:none)  */
+.sandbox_menu2{
+    display: flex;
+}
+.sandbox_menu2 > li > a{
+    padding: 0 10px;
+    border: 1px solid black;
+    background-color: white;   
+    color: black;
+}
+.sandbox_submenu2{
+    display: none;
+    margin-top: 50px;
+}
+.sandbox_submenu2 > li > a{
+    padding: 0 10px;
+    border: 1px solid black;
+    background-color: white;   
+    color: black;
+}
+.sandbox_menu2 > li > a:hover{
+    color: white;
+}
+.sandbox_menu2 > li:hover > ul {
+    display: flex;
+    flex-direction: column;
+}
+.sandbox_submenu2 > li > a:hover{
+    color: white;
+}
+/* ======================================간격이 있는 서브메뉴바 펼치기(height:0 overflow:hidden) */
+.sandbox_menu3{
+    display: flex;
+}
+.sandbox_menu3 > li > a{
+    padding: 0 10px;
+    border: 1px solid black;
+    background-color: white;   
+    color: black;
+}
+.sandbox_submenu3{
+    height: 0;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.sandbox_submenu3 > li > a{
+    padding: 0 10px;
+    border: 1px solid black;
+    background-color: white;   
+    color: black;
+}
+.sandbox_menu3 > li > a:hover{
+    color: white;
+}
+.sandbox_menu3 > li:hover > ul {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.sandbox_submenu3 > li > a:hover{
+    color: white;
+}
+/* ========================================================================가상요소 만들기 */
+.virtual > a::after{
+    content: "after 설정";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: red;
+}
+.virtual > a:before{
+    content: "before 설정";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: blue;
+}
+/* ==================================================가상요소로 이미지 덮어씌워 하얗게 만들기 */
+.virtual1{
+    position: relative;
+}
+.virtual1 > a:before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: blue;
+    position: absolute;
+}
+.virtual1 > a {
+    object-fit: cover;
+}
+.virtual1 > a > img{
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exitdb</title>
+    <link rel="shortcut icon" href="../images/icons/exitdb_favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <script src="../js/aos.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+      <header>
+        <nav class="menu">
+          <p>&nbsp;</p></a>
+          <ul class="menubar">
+            <li>
+              <a href="Exitdb.html">HOME</a>
+            </li>
+            <li>
+              <a href="html_basic.html">HTML 기초</a>
+            </li>
+            <li>
+              <a href="css_basic.html">CSS 기초</a>
+            </li>
+            <li>
+              <a href="js_basic.html">Javascript 기초</a>
+            </li>
+            <li>
+              <a href="library_basic.html">라이브러리 기초</a>
+            </li>
+            <li>
+              <a href="sandbox.html">샌드박스</a>
+            </li>
+            <li>
+              <a href="others.html">VSCode 설정</a>
+            </li>
+            <li>
+              <a href="scss.html">SCSS 기초</a>
+            </li>
+          </ul>
+          <p>&nbsp;</p></a>
+        </nav>
+      </header>
+      <main class="front">
+        <aside class="side_left">
+          <iframe class="iframe100" src="./memo.html" frameborder="0" width="395" scrolling="no"></iframe>
+        </aside>
+        <article>
+            <section class="rowinfo">
+              <div class="html_row"><h3>HTML 한줄지식</h3>
+                <ol>
+                  <li>option*100[value="$$"]{$$}  ~  속성은 []안에, 값은 {}안에</li>
+                  <li>option*100[value="$@1980"]{$@1980} ~ 1980부터 쓰고 싶을 때</li>
+                  <li>Lorem  ~ 칸 채우고 싶을 때, 키케로의 명상록</li>
+                  <li>리다이렉션(redirection) ~  &lt;meta http-equiv="refresh" content="2; url=html/exitdb.html"&gt;</li>
+                  <li>태그 하나에 클래스를 둘 이상 지정할 수 있다. &lt;header class="header hidden"&gt;</li>
+                  <li>개발자 도구 스테이터스에서, 200번과 300번은 제대로 동작하는 것. 400번은 없는 것. 500번은 서버에서 뭔가 잘못 처리되었을 때</li>
+                  <li>.container를 쓰면 div는 따로 안써도 div.container가 된다.</li>
+                  <li>swiper 쓸때 이미지들에게 flex처리를 해줄 필요가 없는 게 아니라, 해서는 안된다!</li>
+                </ol>
+              </div>
+              <div class="html_row"><h3>CSS 한줄지식</h3>
+                <ol>
+                  <li>class 또는 id는 모든 태그의 속성에 들어갈 수 있다</li>
+                  <li>스타일에서 css로 제어할 때, class는 「.」을 쓰고 id는 「#」을 쓴다</li>
+                  <li>클래스가 둘 이상인&lt;p class="head hidden"&gt;만 제어하고 싶을 때는 header.hidden같은 식으로 제어한다.</li>
+                  <li>RGB때 숫자가 같을 때는 세번째 숫자까지만 쓸 수 있다. color: #111111; 는 color: #111; 와 같다</li>
+                  <li>100vw는100% viewpoint width를 의미</li>
+                  <li>hover는 모든 태그에 다 걸 수 있다.</li>
+                  <li>opacity는 사라지는 게 아니라서 hover가 먹어버린다.</li>
+                  <li>cascading이라서 부모->자식은 가능해도 그 반대는 불가능하다</li>
+                  <li>position: absolute의 너비 또는 높이 100% 부모들 중 relative가 있는 곳이나 설정된 곳까지 찾아가 그곳을 기준으로 위치를 잡는다.</li>
+                  <li>transition은 수치로 된 것만 조작할 수 있음. display:none 같은 건 조작 불가능</li>
+                  <li>rgb(225, 0, 255) / rgba(255,255,255,0.5) ~ 투명상태를 만들 수 있음. 0.5는 반투명</li>
+                  <li>중앙배치를 원한다면 너비를 고정해서 준 뒤(width:1400px;), 양쪽 마진을 똑같이(margin: 0 auto;) 주면 된다.</li>
+                  <li>text shadow는 box shadow와는 다르게 인셋 기능이 없다</li>
+                  <li>inline태그들은 기본적으로 좌우 패딩만 가능하지만,  position을 준다면 상하패딩 처리가 가능하다.</li>
+                  <li>css로는 자식요소가 부모요소를 제어할 수가 없다. 그런 경우에는 자바 스크립트를 이용한다.</li>
+                  <li>scss파일이름 앞에 언더바를 붙이면 컴파일을 하지 않는다.</li>
+                  <li>글자를 무조건 한줄로 만들어주는 명령어 ~ white-space: nowrap;</li>
+                </ol>
+              </div>
+              <div class="html_row"><h3>Javascript 한줄지식</h3>
+                <ol>
+                  <li>스크립트 태그의 위치는 가능한한 바디 끝이 좋다. 위에서 부터 읽기 때문에 헤드에 쓰면 안 먹을 수가 있음</li>
+                  <li>*.min은 용량 줄일려고 압축해 놓은 것</li>
+                  <li>마진 병합 ~ 위아래 마진을 동시에 쓰면 큰 것만 먹는다. 즉, 윗 개체의 마진 보텀 100px과 아랫 개체 마진 탑 50px이면, 100px만 적용된다.</li>
+                </ol>
+              </div>
+            </section>
+          </ul>
+          </section>
+        </article>
+        <aside class="side_right">
+          <iframe class="iframe100" src="./terms.html" frameborder="0" width="395" scrolling="no"></iframe>
+        </aside>
+      </main>
+      <script>
+        const header = document.querySelector(".header");
+        window.addEventListener("scroll", function (e) {
+        if (window.scrollY > 0) {
+        header.classList.add("on"); 
+      }
+      else{
+        header.classList.remove("on"); 
+      }
+      });
+      </script>
+  </body>
+</html>

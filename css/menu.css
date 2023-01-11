@@ -1,0 +1,50 @@
+nav{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+margin-top: -30px;
+z-index: 99;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.menu > a > img{
+    height: 100px;
+}
+.menubar{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.5s;
+}
+/* .menubar.on{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(220, 220, 220, 0);  
+    transition: all 0.5s;
+}
+.menubar.on > li{
+    padding: 10px 40px;
+    border: none;
+}
+.menubar.on > li > a{
+    color: rgb(220, 220, 220, 0);  
+} */
+.menubar > li{
+    padding: 10px 40px;
+    border: 1px solid white;
+}
+.menubar > li > a{
+    color: white;
+}
+.menubar > li > a:hover{
+    color: var(--blue);
+}

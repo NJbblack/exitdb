@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exitdb</title>
+    <!-- 파비콘 설정↓↓↓↓↓↓ -->
+    <link
+      rel="shortcut icon"
+      href="../images/icons/exitdb_favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <script src="../js/aos.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <a href="../index.html"><p>HOME</p></a>
+        <ul class="menubar">
+          <li>
+            <a href="html_basic.html">HTML 기초</a>
+          </li>
+          <li>
+            <a href="css_basic.html">CSS 기초</a>
+          </li>
+          <li>
+            <a href="js_basic.html">Javascript 기초</a>
+          </li>
+          <li>
+            <a href="library_basic.html">라이브러리 기초</a>
+          </li>
+          <li>
+            <a href="terms.html">용어정리</a>
+          </li>
+        </ul>
+        <a href="../index.html"><p>HOME</p></a>
+      </nav>
+    </header>
+    <script>
+      const menubar = document.querySelector(".menubar");
+      window.addEventListener("scroll", function (e) {
+        if (window.scrollY > 0) {
+          menubar.classList.add("on");
+        } else {
+          menubar.classList.remove("on");
+        }
+      });
+    </script>
+  </body>
+</html>

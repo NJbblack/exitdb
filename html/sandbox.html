@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exitdb</title>
+    <link rel="shortcut icon" href="../images/icons/exitdb_favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/sandbox.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/sandbox2.css">
+    <script src="../js/aos.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+      <header>
+        <nav class="menu">
+          <a href="../index.html"><p>HOME</p></a>
+          <ul class="menubar">
+            <li>
+              <a href="html_basic.html">HTML 기초</a>
+            </li>
+            <li>
+              <a href="css_basic.html">CSS 기초</a>
+            </li>
+            <li>
+              <a href="js_basic.html">Javascript 기초</a>
+            </li>
+            <li>
+              <a href="library_basic.html">라이브러리 기초</a>
+            </li>
+            <li>
+              <a href="terms.html">용어정리</a>
+            </li>
+          </ul>
+          <a href="../index.html"><p>HOME</p></a>
+        </nav>
+      </header>
+      <main class="front">
+        <aside class="side_left">left</aside>
+        <article><h4 class="sandbox_title">샌드박스</h4>
+          <section class="sandbox_section" id="sand1">
+            <h4>남은 여백 챙겨가기(flex grow 활용)</h4>
+              <p class="exp_comment">남는 여백이 있는 상태</p>
+            <div class="block_align">
+              <div class="red_block">왼쪽 빨간 블록</div>
+              <div class="yel_block">중앙 노란 블록</div>
+              <div class="blue_block">오른쪽 파란 블록</div>
+            </div>
+              <p class="exp_comment">1.각각 flex-grow를 1씩 줬을 때</p>
+            <div class="block_align">
+              <div class="red_block1">왼쪽 빨간 블록</div>
+              <div class="yel_block1">중앙 노란 블록</div>
+              <div class="blue_block1">오른쪽 파란 블록</div>
+            </div>
+              <p class="exp_comment">2.오른쪽에만 flex-grow를 2를 줬을 때</p>
+            <div class="block_align">
+              <div class="red_block2">왼쪽 빨간 블록</div>
+              <div class="yel_block2">중앙 노란 블록</div>
+              <div class="blue_block2">오른쪽 파란 블록</div>
+            </div>
+              <p class="exp_comment">3.양쪽에만 flex-grow를 3을 줬을 때</p>
+            <div class="block_align">
+              <div class="red_block3">왼쪽 빨간 블록</div>
+              <div class="yel_block3">중앙 노란 블록</div>
+              <div class="blue_block3">오른쪽 파란 블록</div>
+            </div>
+          </section>
+          <section class="sandbox_section" id="sand2">
+            <h4>마우스 호버시 서브메뉴바 펼치기(display:none)</h4>
+            <ul class="sandbox_menu">
+              <li><a href="">메뉴1</a>
+                <ul class="sandbox_submenu">
+                  <li><a href="">서브1</a></li>
+                  <li><a href="">서브2</a></li>
+                  <li><a href="">서브3</a></li>
+                </ul>
+              </li>
+              <li><a href="">메뉴2</a>
+                <ul class="sandbox_submenu">
+                  <li><a href="">서브1</a></li>
+                  <li><a href="">서브2</a></li>
+                  <li><a href="">서브3</a></li>
+                </ul>
+              </li>
+              <li><a href="">메뉴3</a>
+                <ul class="sandbox_submenu">
+                  <li><a href="">서브1</a></li>
+                  <li><a href="">서브2</a></li>
+                  <li><a href="">서브3</a></li>
+                </ul>
+              </li>
+              <li><a href="">메뉴4</a>
+                <ul class="sandbox_submenu">
+                  <li><a href="">서브1</a></li>
+                  <li><a href="">서브2</a></li>
+                  <li><a href="">서브3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section class="sandbox_section" id="sand3">
+            <h4>마우스 호버시 서브메뉴바 펼치기(height:0 overflow:hidden)</h4>
+            <ul class="sandbox_menu1">
+              <li><a href="">메뉴1</a>
+                <ul class="sandbox_submenu1">
+                  <li><a href="">서브1</a></li>
+                  <li><a href="">서브2</a></li>
+                  <li><a href="">서브3</a></li>
+                </ul>
+              </li>
+              <li><a href="">메뉴2</a>
+                <ul class="sandbox_submenu1">
+                  <li><a href="">서브1</a></li>
+                  <li><a href="">서브2</a></li>
+                  <li><a href="">서브3</a></li>
+                </ul>
+              </li>
+              <li><a href="">메뉴3</a>
+                <ul class="sandbox_submenu1">
+                  <li><a href="">서브1</a></li>
+                  <li><a href="">서브2</a></li>
+                  <li><a href="">서브3</a></li>
+                </ul>
+              </li>
+              <li><a href="">메뉴4</a>
+                <ul class="sandbox_submenu1">
+                  <li><a href="">서브1</a></li>
+                  <li><a href="">서브2</a></li>
+                  <li><a href="">서브3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section class="sandbox_section" id="sand4">
+            <h4>간격이 있는 서브메뉴바 펼치기(display:none)</h4>
+            <ul class="sandbox_menu2">
+              <li><a href="">메뉴1</a>
+                <ul class="sandbox_submenu2">
+                  <li><a href="">서브1</a></li>
+                  <li><a href="">서브2</a></li>
+                  <li><a href="">서브3</a></li>
+                </ul>
+              </li>
+              <li><a href="">메뉴2</a>
+                <ul class="sandbox_submenu2">
+                  <li><a href="">서브1</a></li>
+                  <li><a href="">서브2</a></li>
+                  <li><a href="">서브3</a></li>
+                </ul>
+              </li>
+              <li><a href="">메뉴3</a>
+                <ul class="sandbox_submenu2">
+                  <li><a href="">서브1</a></li>
+                  <li><a href="">서브2</a></li>
+                  <li><a href="">서브3</a></li>
+                </ul>
+              </li>
+              <li><a href="">메뉴4</a>
+                <ul class="sandbox_submenu2">
+                  <li><a href="">서브1</a></li>
+                  <li><a href="">서브2</a></li>
+                  <li><a href="">서브3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section class="sandbox_section" id="sand5">
+            <h4>간격이 있는 서브메뉴바 펼치기(height:0 overflow:hidden)</h4>
+            <ul class="sandbox_menu3">
+              <li><a href="">메뉴1</a>
+                <ul class="sandbox_submenu3">
+                  <li><a href="">서브1</a></li>
+                  <li><a href="">서브2</a></li>
+                  <li><a href="">서브3</a></li>
+                </ul>
+              </li>
+              <li><a href="">메뉴2</a>
+                <ul class="sandbox_submenu3">
+                  <li><a href="">서브1</a></li>
+                  <li><a href="">서브2</a></li>
+                  <li><a href="">서브3</a></li>
+                </ul>
+              </li>
+              <li><a href="">메뉴3</a>
+                <ul class="sandbox_submenu3">
+                  <li><a href="">서브1</a></li>
+                  <li><a href="">서브2</a></li>
+                  <li><a href="">서브3</a></li>
+                </ul>
+              </li>
+              <li><a href="">메뉴4</a>
+                <ul class="sandbox_submenu3">
+                  <li><a href="">서브1</a></li>
+                  <li><a href="">서브2</a></li>
+                  <li><a href="">서브3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section class="sandbox_section" id="sand6">
+            <div class="virtual">
+              <h4>가상요소 만들기, 가상요소로 사진 뿌옇게 만들기</h4>
+              <a class="target_img" href=""><img src="../images/others/xmas_dinner.webp" alt=""></a>
+              <p>주의! before는 이미지 태그나 비디오 태그에는 나타나지 않는다.</p>
+            </div>
+            <div class="virtual1">
+              <a class="target_img" href=""><img src="../images/others/xmas_dinner.webp" alt=""></a>
+            </div>
+          </section>
+          <section class="sandbox_section" id="sand7">
+            <h4>transform: translateY를 이용해 텍스트를 중앙에 위치시키기(height:300px)</h4>
+            <p>실험용 텍스트</p>
+            <span>top 50%만으로는 정 중앙으로 못가므로, transform traslateY -50%를 이용해 중앙에 위치시킨다.</span>
+          </section>
+          <section class="sandbox_section" id="sand8">
+            <h4>transform: translateY를 이용해 텍스트를 중앙에 위치시키기(height:800px)</h4>
+            <p>실험용 텍스트</p>
+            <span>top 50%만으로는 정 중앙으로 못가므로, transform traslateY -50%를 이용해 중앙에 위치시킨다.</span>
+          </section>
+          <section class="sandbox_section" id="sand9">
+            <h4>after를 이용해 마우스 hover시 선 개체를 움직이게 만들기</h4>
+            <ol>
+              <li class="ex01"><a class="custom01">마우스 hover시 li에 설정된 width만큼 파란 막대기 좌측에서 나온다</a></li>
+              <li class="ex02"><a class="custom02">마우스 hover시 200px 만큼만 파란 막대가 우측에서 나온다</a></li>
+              <li class="ex03"><a class="custom03">마우스 hover시 li에 설정된 width만큼 보라 막대가 좌에서 나와 우로 간다</a></li>
+              <li class="ex04"><a class="custom04">마우스 hover시 li에 설정된 width의 50%만큼만 빨간 막대가 좌에서 나와 우로 간다</a></li>
+            </ol>
+          </section>
+          <section class="sandbox_section" id="sand10">
+            <h4>키프레임(keyframes) 애니메이션#좌우 동작</h4>
+            <img src="../images/icons/exitdb_favicon.png" alt="">
+          </section>
+          <section class="sandbox_section" id="sand11">
+            <h4>키프레임(keyframes) 애니메이션#커졌다가 작아졌다 </h4>
+            <img src="../images/icons/exitdb_favicon.png" alt="">
+          </section>
+          <section class="sandbox_section" id="sand12">
+            <h4>키프레임(keyframes) 애니메이션#180도 회전 후 반대 방향으로 270도 회전 </h4>
+            <img src="../images/icons/exitdb_favicon.png" alt="">
+          </section>
+          <section class="sandbox_section" id="sand13">
+            <h4>자바 스크립트로 마우스 메뉴창 호버 시 서브 메뉴 열리게 만들기</h4>
+            <div class="exp_header">
+              <a href="">start</a>
+              <ul class="sandbox_menu4">
+                <li class="sandbox_limenu4"><a href="">메뉴1</a>
+                  <ul class="sandbox_submenu4">
+                    <li><a href="">서브1</a></li>
+                    <li><a href="">서브2</a></li>
+                    <li><a href="">서브3</a></li>
+                  </ul>
+                </li>
+                <li><a href="">메뉴2</a>
+                  <ul class="sandbox_submenu4">
+                    <li><a href="">서브1</a></li>
+                    <li><a href="">서브2</a></li>
+                    <li><a href="">서브3</a></li>
+                  </ul>
+                </li>
+                <li><a href="">메뉴3</a>
+                  <ul class="sandbox_submenu4">
+                    <li><a href="">서브1</a></li>
+                    <li><a href="">서브2</a></li>
+                    <li><a href="">서브3</a></li>
+                  </ul>
+                </li>
+                <li><a href="">메뉴4</a>
+                  <ul class="sandbox_submenu4">
+                    <li><a href="">서브1</a></li>
+                    <li><a href="">서브2</a></li>
+                    <li><a href="">서브3</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <a href="">end</a>
+            </div>
+          </section>
+          <section class="sandbox_section" id="sand14">
+            <h4></h4>
+          </section>
+        </article>
+        <aside class="side_right">
+        </aside>
+      </main>
+      <script>
+        const menubar = document.querySelector(".menubar");
+        window.addEventListener("scroll", function (e) {
+        if (window.scrollY > 0) {
+        menubar.classList.add("on"); 
+      }
+      else{
+        menubar.classList.remove("on"); 
+      }
+      });
+      </script>
+  </body>
+</html>
